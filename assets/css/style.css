@@ -4677,3 +4677,88 @@ EmojiSymbols;
 .ip-copy:hover {
   color: rgb(164, 164, 164);
 }
+
+.wiki-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.wikisidebar {
+  color: white;
+  flex-direction: column;
+  flex: auto !important;
+  min-width: max-content; 
+  max-width: 200px; 
+  flex: 5;
+}
+
+.wikicontent {
+  flex-grow: 2 !important;
+  flex: content;
+  margin: 0px 0px 0px 0px;
+}
+
+.sidebartopbottomborders {
+  display: none;
+}
+
+.wikihead-mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.title-bg-backdrop {
+  background-color: #0000005f;
+}
+
+@media (max-width: 767px) {
+  .wiki-container {
+    flex-direction: column;
+    justify-content: left;
+    justify-items: left;
+  }
+
+  .wikisidebar {
+    color: #9c9c9c;
+    margin: unset;
+    text-align: left;
+    background-color: #0f172a;
+    max-width: 100%;
+    padding-left: 1.5rem;
+  }
+
+  .sidebartopbottomborders {
+    display: inherit;
+  }
+
+  .sidebar-shown {
+    padding-bottom: 1.5rem;
+  }
+  
+  .sidebar-hidden {
+    display: none;
+  }
+
+  .wikihead-mb-4 {
+    margin-bottom: unset;
+  }
+}
+
+
+.sidebar-href {
+  color: white;
+}
+
+/* .sidebar-href:hover {
+  color: cyan;
+} */
+
+.sidebar-p:hover {
+  background-color: rgb(71, 85, 99);
+}
+
+.sidebar-p {
+  padding: 5px;
+  background-color: inherit;
+}

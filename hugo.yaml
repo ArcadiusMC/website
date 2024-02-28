@@ -109,6 +109,10 @@ menu:
       name: "News"
       url: /news/
       weight: 3
+    - identifier: wiki
+      name: "Player Wiki"
+      url: /wiki/
+      weight: 4
     # - identifier: categories
     #   pre: dropdown
     #   name: Categories
