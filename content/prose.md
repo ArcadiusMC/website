@@ -14,7 +14,7 @@ Beautiful typographic defaults for HTML you don't control.
 The official Tailwind CSS Typography plugin provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don’t control, like HTML rendered from Markdown, or pulled from a CMS.
 
 Tailwind CSS IntelliSense extension for Visual Studio Code
-```
+```html
 <article class="prose lg:prose-xl">
   {{ markdown }}
 </article>
@@ -25,13 +25,13 @@ To see what it looks like in action, check out our [live demo](https://play.tail
 ## Installation
 ### Install the plugin from npm:
 
-```
+```cmd
 npm install -D @tailwindcss/typography
 ```
 
 Then add the plugin to your tailwind.config.js file: tailwind.config.js
 
-```
+```js
 module.exports = {
   theme: {
     // ...
@@ -46,7 +46,7 @@ module.exports = {
 ## Basic usage
 Now you can use the prose classes to add sensible typography styles to any vanilla HTML:
 
-```
+```html
 <article class="prose lg:prose-xl">
   <h1>Garlic bread with cheese: What the science tells us</h1>
   <p>
@@ -64,7 +64,7 @@ Now you can use the prose classes to add sensible typography styles to any vanil
 ## Choosing a gray scale
 This plugin includes a modifier class for each of the five gray scales Tailwind includes by default so you can easily style your content to match the grays you’re using in your project.
 
-```
+```html
 <article class="prose prose-slate">
   {{ markdown }}
 </article>
@@ -84,7 +84,7 @@ Modifier classes are designed to be used with the multi-class modifier pattern a
 
 Always include the `prose` class when adding a gray scale modifier
 
-```
+```html
 <article class="prose prose-stone">
   {{ markdown }}
 </article>
@@ -94,7 +94,7 @@ To learn about creating your own color themes, read the adding custom color them
 ## Applying a type scale
 Size modifiers allow you to adjust the overall size of your typography for different contexts.
 
-```
+```html
 <article class="prose prose-xl">
   {{ markdown }}
 </article>
@@ -113,7 +113,7 @@ Class	Body font size
 	
 These can be used in combination with Tailwind’s breakpoint modifiers to change the overall font size of a piece of content at different viewport sizes:
 
-```
+```html
 <article class="prose md:prose-lg lg:prose-xl">
   {{ markdown }}
 </article>
@@ -125,7 +125,7 @@ Size modifiers are designed to be used with the multi-class modifier pattern and
 
 Always include the `prose` class when adding a size modifier
 
-```
+```html
 <article class="prose prose-lg">
   {{ markdown }}
 </article>
@@ -135,7 +135,7 @@ To learn about customizing the included type scales, read the documentation on c
 ## Adapting to dark mode
 Each default color theme includes a hand-designed dark mode version that you can trigger by adding the prose-invert class:
 
-```
+```html
 <article class="prose dark:prose-invert">
   {{ markdown }}
 </article>
@@ -147,7 +147,7 @@ To learn about creating your own color themes, read the adding custom color them
 Element modifiers
 Use element modifiers to customize the style of individual elements in your content directly in your HTML:
 
-```
+```html
 <article class="prose prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600">
   {{ markdown }}
 </article>
@@ -187,7 +187,7 @@ This makes it easy to do things like style links to match your brand, add a bord
 | prose-hr:{utility} | hr |
 
 When stacking these modifiers with other modifiers like hover, you most likely want the other modifier to come first:
-```
+```html
 <article class="prose prose-a:text-blue-600 hover:prose-a:text-blue-500">
   {{ markdown }}
 </article>
@@ -200,7 +200,7 @@ Each size modifier comes with a baked in max-width designed to keep the content 
 
 In those cases, all you need to do is add max-w-none to your content to override the embedded max-width:
 
-```
+```html
 <div class="grid grid-cols-4">
   <div class="col-span-1">
     <!-- ... -->
@@ -218,7 +218,7 @@ In those cases, all you need to do is add max-w-none to your content to override
 Undoing typography styles
 If you have a block of markup embedded in some content that shouldn’t inherit the prose styles, use the not-prose class to sandbox it:
 
-```
+```html
 <article class="prose">
   <h1>My Heading</h1>
   <p>...</p>
@@ -237,7 +237,7 @@ Note that you can’t nest new prose instances within a not-prose block at this 
 ## Adding custom color themes
 You can create your own color theme by adding a new key in the typography section of your tailwind.config.js file and providing your colors under the css key:
 
-```
+```js
 tailwind.config.js
 module.exports = {
   theme: {
@@ -292,7 +292,7 @@ See our internal style definitions for some more examples.
 ​
 ## Changing the default class name
 If you need to use a class name other than prose for any reason, you can do so using the className option when registering the plugin:
-```
+```js
   tailwind.config.js
   module.exports = {
     theme: {
@@ -308,7 +308,7 @@ If you need to use a class name other than prose for any reason, you can do so u
 ```
 
 Now every instance of prose in the default class names will be replaced by your custom class name:
-```
+```html
   <article class="wysiwyg wysiwyg-slate lg:wysiwyg-xl">
     <h1>My Heading</h1>
     <p>...</p>
@@ -324,7 +324,7 @@ Now every instance of prose in the default class names will be replaced by your 
 
 ## Customizing the CSS
 If you want to customize the raw CSS generated by this plugin, add your overrides under the typography key in the theme section of your tailwind.config.js file:
-```
+```js
   tailwind.config.js
   module.exports = {
     theme: {
@@ -352,7 +352,7 @@ If you want to customize the raw CSS generated by this plugin, add your override
 ```
 Like with all theme customizations in Tailwind, you can also define the typography key as a function if you need access to the theme helper:
 
-```
+```js
 tailwind.config.js
 module.exports = {
   theme: {

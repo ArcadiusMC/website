@@ -1,0 +1,127 @@
+/* assets */
+@import url('https://fonts.cdnfonts.com/css/trajan-pro');
+
+.trajanpro {
+  font-family: 'Trajan Pro';
+}
+
+.index-bg {
+  background-image: url("/images/index-bg.png");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.gray-margin {
+  background-color: #00000094;
+}
+
+.ip-copy {
+  color: white;
+}
+
+.ip-copy:hover {
+  text-decoration: underline;
+}
+
+.ip-copy:active {
+  color: rgb(139, 162, 166);
+  text-decoration: underline;
+}
+
+.wiki-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+}
+
+.wikisidebar {
+  flex-direction: column;
+  flex: auto !important;
+  min-width: 200px; 
+  max-width: 200px; 
+  flex: 5;
+  overflow-x: hidden;
+}
+
+.wiki-hr {
+  max-width: 95%;
+}
+
+.wikicontent {
+  flex-grow: 1 !important;
+  flex: content;
+  margin: 1rem 0px 3rem 0px;
+  min-height: 25rem;
+}
+
+.sidebartopbottomborders {
+  display: none;
+}
+
+.wikihead-mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.title-bg-backdrop {
+  background-color: #0000005f;
+}
+
+@media (min-width: 768px) {
+  .nmobile-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .wiki-container {
+    flex-direction: column;
+    justify-content: left;
+    justify-items: left;
+  }
+
+  .wikisidebar {
+    color: #9c9c9c;
+    margin: unset;
+    text-align: left;
+    background-color: #0f172a;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .sidebartopbottomborders {
+    display: inherit;
+  }
+
+  .sidebar-shown {
+    padding-bottom: 1.5rem;
+  }
+  
+  .sidebar-hidden {
+    display: none;
+  }
+
+  .wikihead-mb-4 {
+    margin-bottom: unset;
+  }
+}
+
+.cmd-usage {
+  margin-bottom: 0px !important;
+  padding: 0.5rem !important;
+}
+
+.no-mar {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.cmd-uses-header {
+  margin-bottom: 0px !important;
+  margin-top: .5rem !important;
+}

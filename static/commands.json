@@ -1,0 +1,5452 @@
+[
+  {
+    "name": "deletehome",
+    "permission": "arcadius.commands.home",
+    "adminCommand": true,
+    "aliases": [
+      "removehome",
+      "remhome",
+      "yeethome",
+      "delhome"
+    ],
+    "description": "Deletes a home",
+    "category": "home",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Deletes your home named \u0027home\u0027"
+        ]
+      },
+      {
+        "arguments": "\u003chome\u003e",
+        "info": [
+          "Deletes \u003chome\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e:\u003chome\u003e",
+        "info": [
+          "Deletes a \u003cplayer\u003e\u0027s \u003chome\u003e"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "home",
+    "permission": "arcadius.commands.home",
+    "adminCommand": true,
+    "description": "Takes you to one of your homes",
+    "category": "home",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Teleports you to your home named \u0027home\u0027"
+        ]
+      },
+      {
+        "arguments": "\u003chome\u003e",
+        "info": [
+          "Teleports you to \u003chome\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e:\u003chome\u003e",
+        "info": [
+          "Teleports to the \u003cplayer\u003e\u0027s \u003chome\u003e"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "homelist",
+    "permission": "arcadius.commands.home",
+    "adminCommand": true,
+    "aliases": [
+      "homes",
+      "listhomes"
+    ],
+    "description": "Lists all your homes",
+    "category": "home",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Lists your homes"
+        ]
+      },
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Lists the \u003cuser\u003e\u0027s homes"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "sethome",
+    "permission": "arcadius.commands.home",
+    "adminCommand": true,
+    "description": "Sets a home where you\u0027re standing",
+    "category": "home",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets your default home, named \u0027home\u0027"
+        ]
+      },
+      {
+        "arguments": "\u003chome name\u003e",
+        "info": [
+          "Sets a home to where you\u0027re standing"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "staffchat",
+    "permission": "arcadius.staffchat",
+    "adminCommand": true,
+    "aliases": [
+      "sc"
+    ],
+    "description": "Sends a message to the staff chat",
+    "category": "staffchat",
+    "usages": [
+      {
+        "arguments": "\u003cmessage\u003e",
+        "info": [
+          "Sends a \u003cmessage\u003e to the staff chat"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "back",
+    "permission": "arcadius.commands.back",
+    "adminCommand": true,
+    "aliases": [
+      "return"
+    ],
+    "description": "Teleports you to your previous location",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Teleports you to your previous location"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "balance",
+    "permission": "arcadius.commands.balance",
+    "adminCommand": true,
+    "aliases": [
+      "bal",
+      "bank",
+      "cash",
+      "money",
+      "ebal"
+    ],
+    "description": "An ArcadiusMC command",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shows you your Denarii"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Shows you \u003cplayer\u003e\u0027s Denarii"
+        ]
+      },
+      {
+        "arguments": "add \u003cplayer\u003e \u003camount: number\u003e",
+        "info": [
+          "Adds \u003camount\u003e of Denarii to \u003cplayer\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "set \u003cplayer\u003e \u003camount: number\u003e",
+        "info": [
+          "Sets the Denarii of \u003cplayer\u003e to \u003camount\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "remove \u003cplayer\u003e \u003camount: number\u003e",
+        "info": [
+          "Removes \u003camount\u003e from the Denarii of \u003cplayer\u003e"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "baltop",
+    "permission": "arcadius.commands.baltop",
+    "adminCommand": true,
+    "aliases": [
+      "balancetop",
+      "banktop",
+      "topbals",
+      "topbalances"
+    ],
+    "description": "An ArcadiusMC command",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shows you the Top balances"
+        ]
+      },
+      {
+        "arguments": "\u003cpage\u003e [\u003cpage size: number(5..20)\u003e]",
+        "info": [
+          "Shows you the Top balances on \u003cpage\u003e",
+          "If [page size] is not set, then it defaults to 10"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "beezooka",
+    "permission": "arcadius.commands.beezooka",
+    "adminCommand": true,
+    "description": "Shoots a bee :D",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shoots a bee :D"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "cartography",
+    "permission": "arcadius.commands.cartography",
+    "adminCommand": true,
+    "description": "Opens a cartography table",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens a cartography table"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "deposit",
+    "permission": "arcadius.commands.deposit",
+    "adminCommand": true,
+    "description": "Allows you to deposit coins into your balance",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Deposits all held coins"
+        ]
+      },
+      {
+        "arguments": "all",
+        "info": [
+          "Deposits all coins in your inventory"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "disposal",
+    "permission": "arcadius.commands.disposal",
+    "adminCommand": true,
+    "aliases": [
+      "bin"
+    ],
+    "description": "Opens a menu to dispose of items for yourself or another player",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens a menu to dispose of items for yourself"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Opens a menu to dispose of items for a \u003cplayer\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "enderchest",
+    "permission": "arcadius.commands.enderchest",
+    "adminCommand": true,
+    "aliases": [
+      "ec",
+      "echest"
+    ],
+    "description": "Opens your Ender Chest",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens your Ender Chest"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "feed",
+    "permission": "arcadius.commands.feed",
+    "adminCommand": true,
+    "description": "Feeds yourself or a player",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Feeds yourself"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Feeds a \u003cplayer\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "flist",
+    "permission": "arcadius.commands.list",
+    "adminCommand": true,
+    "aliases": [
+      "list",
+      "elist",
+      "playerlist"
+    ],
+    "description": "Lists all players on the server"
+  },
+  {
+    "name": "grindstone",
+    "permission": "arcadius.commands.grindstone",
+    "adminCommand": true,
+    "description": "Opens the grindstone menu",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the grindstone menu"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "hat",
+    "permission": "arcadius.commands.hat",
+    "adminCommand": true,
+    "description": "Places the item in your hand on your head",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Places the item in your hand on your head"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "heal",
+    "permission": "arcadius.commands.heal",
+    "adminCommand": true,
+    "description": "Heals yourself or another player",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Heals yourself"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Heals a \u003cplayer\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "kittycannon",
+    "permission": "arcadius.commands.kittycannon",
+    "adminCommand": true,
+    "description": "Shoots a kitten at people",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shoots a kitten at people"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "leave",
+    "permission": "arcadius.commands.leave",
+    "adminCommand": true,
+    "aliases": [
+      "quit",
+      "exit"
+    ],
+    "description": "Use when you want to leave an event or server area"
+  },
+  {
+    "name": "loom",
+    "permission": "arcadius.commands.loom",
+    "adminCommand": true,
+    "description": "Opens the loom inventory",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the loom inventory"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "me",
+    "permission": "arcadius.commands.arcadius_me",
+    "adminCommand": true,
+    "aliases": [
+      "me"
+    ],
+    "description": "Command that everyone uses to make people think they died",
+    "usages": [
+      {
+        "arguments": "\u003caction\u003e",
+        "info": [
+          "Broadcasts the \u003caction\u003e in chat",
+          "Lets you trick people into thinking you died",
+          "by doing \u0027/me was blown up by Creeper\u0027"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "near",
+    "permission": "arcadius.commands.near",
+    "adminCommand": true,
+    "aliases": [
+      "nearby"
+    ],
+    "description": "Shows nearby players",
+    "usages": [
+      {
+        "arguments": "\u003cradius: number(1..100,000)\u003e",
+        "info": [
+          "Shows all players with a \u003cradius\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cuser\u003e [\u003cradius: number(1..100,000)\u003e]",
+        "info": [
+          "Shows all players near to a \u003cuser\u003e",
+          "and within an optional [range]"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "nickname",
+    "permission": "arcadius.commands.nickname",
+    "adminCommand": true,
+    "aliases": [
+      "nick"
+    ],
+    "description": "Sets your nickname",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Clears your nickname"
+        ]
+      },
+      {
+        "arguments": "\u003cnick\u003e",
+        "info": [
+          "Sets your nickname"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003cnick\u003e",
+        "info": [
+          "Sets a player\u0027s nickname"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e clear",
+        "info": [
+          "Clears a player\u0027s nickname"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pay",
+    "permission": "arcadius.commands.pay",
+    "adminCommand": true,
+    "description": "Pay another player",
+    "usages": [
+      {
+        "arguments": "\u003cplayers\u003e \u003camount: number(1..)\u003e [\u003cmessage\u003e]",
+        "info": [
+          "Pays all \u003cplayers\u003e an \u003camount\u003e of rhines [message] specifies",
+          "an optional message to send to players being paid."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "playtimetop",
+    "permission": "arcadius.commands.playtimetop",
+    "adminCommand": true,
+    "aliases": [
+      "nolifetop",
+      "topplayers"
+    ],
+    "description": "An ArcadiusMC command",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shows you the Top by playtime"
+        ]
+      },
+      {
+        "arguments": "\u003cpage\u003e [\u003cpage size: number(5..20)\u003e]",
+        "info": [
+          "Shows you the Top by playtime on \u003cpage\u003e",
+          "If [page size] is not set, then it defaults to 10"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "profile",
+    "permission": "arcadius.commands.profile",
+    "adminCommand": true,
+    "aliases": [
+      "user",
+      "playerprofile",
+      "gameprofile"
+    ],
+    "description": "Displays a user\u0027s information",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shows your profile"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Shows you a \u003cplayer\u003e\u0027s profile"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "repair",
+    "permission": "arcadius.commands.repair",
+    "adminCommand": true,
+    "description": "Repairs the item you\u0027re holding",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Repairs an item held by yourself"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Repairs an item held by a \u003cplayer\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "reply",
+    "permission": "arcadius.commands.message",
+    "adminCommand": true,
+    "aliases": [
+      "er",
+      "ereply",
+      "respond",
+      "r"
+    ],
+    "description": "Send a message to the last person to send you a message",
+    "usages": [
+      {
+        "arguments": "\u003cmessage\u003e",
+        "info": [
+          "Sends a \u003cmessage\u003e to the last person that",
+          "messaged you / you messaged."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "roll",
+    "permission": "arcadius.commands.roll",
+    "adminCommand": true,
+    "description": "An ArcadiusMC command"
+  },
+  {
+    "name": "say",
+    "permission": "arcadius.commands.say",
+    "adminCommand": true,
+    "description": "Says a message in chat"
+  },
+  {
+    "name": "settings",
+    "permission": "arcadius.commands.settings",
+    "adminCommand": true,
+    "aliases": [
+      "options",
+      "preferences"
+    ],
+    "description": "Opens the settings book",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the settings book"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "smithingtable",
+    "permission": "arcadius.commands.smithingtable",
+    "adminCommand": true,
+    "aliases": [
+      "smithing"
+    ],
+    "description": "Opens the smithing table",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the smithing table"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "stonecutter",
+    "permission": "arcadius.commands.stonecutter",
+    "adminCommand": true,
+    "description": "Opens the stone cutter menu",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the stone cutter menu"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "suicide",
+    "permission": "arcadius.commands.suicide",
+    "adminCommand": true,
+    "description": "Commits suicide D:",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Commits suicide D:"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tell",
+    "permission": "arcadius.commands.message",
+    "adminCommand": true,
+    "aliases": [
+      "emsg",
+      "tell",
+      "whisper",
+      "w",
+      "msg",
+      "etell",
+      "ewhisper",
+      "pm",
+      "dm",
+      "t",
+      "message"
+    ],
+    "description": "Sends a message to a player",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003cmessage\u003e",
+        "info": [
+          "Sends a \u003cmessage\u003e to \u003cplayer\u003e",
+          "Donators can use color codes and emotes"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "topvoters",
+    "permission": "arcadius.commands.topvoters",
+    "adminCommand": true,
+    "aliases": [
+      "votetop"
+    ],
+    "description": "An ArcadiusMC command",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shows you the Top voters"
+        ]
+      },
+      {
+        "arguments": "\u003cpage\u003e [\u003cpage size: number(5..20)\u003e]",
+        "info": [
+          "Shows you the Top voters on \u003cpage\u003e",
+          "If [page size] is not set, then it defaults to 10"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "wild",
+    "permission": "arcadius.commands.wild",
+    "adminCommand": true,
+    "aliases": [
+      "rtp",
+      "randomtp",
+      "randomteleport"
+    ],
+    "description": "Allows you to teleport to random locations",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Allows you to teleport to random locations"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "withdraw",
+    "permission": "arcadius.commands.withdraw",
+    "adminCommand": true,
+    "description": "Get cold coins from your balance",
+    "usages": [
+      {
+        "arguments": "\u003camount\u003e",
+        "info": [
+          "Withdraws a coin worth \u003camount\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003camount\u003e \u003ccoins\u003e",
+        "info": [
+          "Withdraws \u003ccoins\u003e, each worth \u003camount\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "workbench",
+    "permission": "arcadius.commands.workbench",
+    "adminCommand": true,
+    "aliases": [
+      "wb",
+      "craftingtable"
+    ],
+    "description": "Opens a workbench",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens a workbench"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "leaderboards",
+    "permission": "arcadius.commands.leaderboards",
+    "adminCommand": true,
+    "aliases": [
+      "lb"
+    ],
+    "description": "Leaderboards admin command",
+    "category": "holograms",
+    "usages": [
+      {
+        "arguments": "reload-config",
+        "info": [
+          "Reloads the Leaderboards Config"
+        ]
+      },
+      {
+        "arguments": "reload-boards",
+        "info": [
+          "Reloads all leaderboards from disc"
+        ]
+      },
+      {
+        "arguments": "save",
+        "info": [
+          "Saves all leaderboards to disk"
+        ]
+      },
+      {
+        "arguments": "list",
+        "info": [
+          "Lists all leaderboards"
+        ]
+      },
+      {
+        "arguments": "list [\u003cpage size\u003e] [\u003cpage size\u003e]",
+        "info": [
+          "Lists all leaderboards on a specific page"
+        ]
+      },
+      {
+        "arguments": "create \u003cname\u003e",
+        "info": [
+          "Creates a new leaderboard with \u0027dummy\u0027 source"
+        ]
+      },
+      {
+        "arguments": "info \u003cboard\u003e",
+        "info": [
+          "Shows info about a leaderboard"
+        ]
+      },
+      {
+        "arguments": "update \u003cboard\u003e",
+        "info": [
+          "Updates a leaderboard"
+        ]
+      },
+      {
+        "arguments": "update-all",
+        "info": [
+          "Updates all leaderboards"
+        ]
+      },
+      {
+        "arguments": "kill \u003cboard\u003e",
+        "info": [
+          "Kills a leaderboard"
+        ]
+      },
+      {
+        "arguments": "remove \u003cboard\u003e",
+        "info": [
+          "Kills and deletes a leaderboard"
+        ]
+      },
+      {
+        "arguments": "spawn \u003cboard\u003e",
+        "info": [
+          "Spawns a leaderboard"
+        ]
+      },
+      {
+        "arguments": "location \u003cboard\u003e",
+        "info": [
+          "Moves a leaderboard to where you\u0027re standing"
+        ]
+      },
+      {
+        "arguments": "location \u003cboard\u003e \u003cpos: x y z\u003e",
+        "info": [
+          "Moves a leaderboard to the specified xyz coordinates"
+        ]
+      },
+      {
+        "arguments": "copy \u003cboard\u003e from \u003csource\u003e",
+        "info": [
+          "Copies data from one leaderboard to another",
+          "List of elements copied from the first board to the second:",
+          "- `format`",
+          "- `you format`",
+          "- `header`",
+          "- `footer`",
+          "- `include-you`",
+          "- `max-size`",
+          "- `fill-empty`",
+          "- `scale`",
+          "- `translation`",
+          "- `brightness`",
+          "- `billboard`",
+          "- `text-alignment`",
+          "- `background-color`",
+          "- `text-shadow`",
+          "- `see-through`",
+          "- `line-width`",
+          "- `opacity`"
+        ]
+      },
+      {
+        "arguments": "footer \u003cboard\u003e \u003ctext\u003e",
+        "info": [
+          "Sets the footer used by a leaderboard"
+        ]
+      },
+      {
+        "arguments": "header \u003cboard\u003e \u003ctext\u003e",
+        "info": [
+          "Sets the header (title) used by a leaderboard"
+        ]
+      },
+      {
+        "arguments": "format \u003cboard\u003e \u003ctext\u003e",
+        "info": [
+          "Sets the format used by a leaderboard"
+        ]
+      },
+      {
+        "arguments": "empty-format set \u003cboard\u003e \u003ctext\u003e",
+        "info": [
+          "Overrides the format used for displaying entries that",
+          "are empty, only used in when \u0027fill-empty\u0027 is set to \u0027true\u0027"
+        ]
+      },
+      {
+        "arguments": "empty-format unset \u003cboard\u003e",
+        "info": [
+          "Revers the format used for displaying empty entries",
+          "back to the regular format."
+        ]
+      },
+      {
+        "arguments": "you-format set \u003cboard\u003e \u003ctext\u003e",
+        "info": [
+          "Sets the format used when displaying the \u0027You\u0027 entry"
+        ]
+      },
+      {
+        "arguments": "you-format unset \u003cboard\u003e",
+        "info": [
+          "Reverts the format used for displaying the \u0027You\u0027 entry",
+          "back to the regular format"
+        ]
+      },
+      {
+        "arguments": "include-you \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Enables/Disables the \u0027You\u0027 entry being displayed",
+          "",
+          "The \u0027You\u0027 entry will not be shown if a non-player leaderboard",
+          "is being rendered, or if the player has no score in the leaderboard"
+        ]
+      },
+      {
+        "arguments": "order \u003cboard\u003e \u003corder\u003e",
+        "info": [
+          "Sets the order in which elements are listed"
+        ]
+      },
+      {
+        "arguments": "source \u003cboard\u003e \u003csource\u003e",
+        "info": [
+          "Sets the data source used by a leaderboard"
+        ]
+      },
+      {
+        "arguments": "max-size \u003cboard\u003e \u003csize\u003e",
+        "info": [
+          "Sets the maximum amount of entries a leaderboard will show"
+        ]
+      },
+      {
+        "arguments": "fill-empty \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets whether the leaderboard size is changed or if empty",
+          "slots are filled with \u0027-\u0027 values"
+        ]
+      },
+      {
+        "arguments": "filter set \u003cboard\u003e \u003cfilter\u003e",
+        "info": [
+          "Sets a leaderboard\u0027s score filter"
+        ]
+      },
+      {
+        "arguments": "filter unset \u003cboard\u003e",
+        "info": [
+          "Removes a leaderboard\u0027s filter"
+        ]
+      },
+      {
+        "arguments": "entity yaw \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the yaw (x rotation) of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity pitch \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the pitch (y rotation) of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity scale set \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a leaderboard\u0027s scale"
+        ]
+      },
+      {
+        "arguments": "entity scale unset \u003cboard\u003e",
+        "info": [
+          "Removes a set scale value from a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity translation set \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the transformation offset of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity translation unset \u003cboard\u003e",
+        "info": [
+          "Removes a set offset value from a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity billboard \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the \u0027billboard\u0027 value of a leaderboard",
+          "A \u0027billboard\u0027 decides if a leaderboard is always rotated to face you",
+          "or is at a fixed angle"
+        ]
+      },
+      {
+        "arguments": "entity text-align \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the text alignment of a leaderboard (left, right, or center)"
+        ]
+      },
+      {
+        "arguments": "entity background-color set \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the background color of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity background-color unset \u003cboard\u003e",
+        "info": [
+          "Removes a set background color value from a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity brightness set \u003cboard\u003e \u003cskylight\u003e \u003cblocklight\u003e",
+        "info": [
+          "Sets the \u0027brightness\u0027 of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity brightness unset \u003cboard\u003e",
+        "info": [
+          "Removes a set \u0027brightness\u0027 value from a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity shadowed \u003cboard\u003e \u003ctrue|false\u003e",
+        "info": [
+          "Sets the background color of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity see-through \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets if a leaderboard can be seen through"
+        ]
+      },
+      {
+        "arguments": "entity line-width set \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a leaderboard\u0027s line width"
+        ]
+      },
+      {
+        "arguments": "entity line-width unset \u003cboard\u003e",
+        "info": [
+          "Removes a leaderboard\u0027s set line-width value"
+        ]
+      },
+      {
+        "arguments": "entity text-opacity set \u003cboard\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the text opacity of a leaderboard"
+        ]
+      },
+      {
+        "arguments": "entity text-opacity unset \u003cboard\u003e",
+        "info": [
+          "Removes the set text opacity value of leaderboard"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "afk",
+    "permission": "arcadius.commands.afk",
+    "adminCommand": true,
+    "aliases": [
+      "away"
+    ],
+    "description": "Marks or un-marks you as AFK",
+    "category": "afk",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets you afk/unafk"
+        ]
+      },
+      {
+        "arguments": "\u003cmessage\u003e",
+        "info": [
+          "AFKs you with an AFK message"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "usertitles",
+    "permission": "arcadius.commands.usertitles",
+    "adminCommand": true,
+    "aliases": [
+      "user_titles",
+      "titles",
+      "userranks",
+      "user_ranks",
+      "ranks",
+      "rank"
+    ],
+    "description": "Manages user titles and rank tiers",
+    "category": "titles",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Manages user titles and rank tiers"
+        ]
+      },
+      {
+        "arguments": "reload",
+        "info": [
+          "Reloads the plugin"
+        ]
+      },
+      {
+        "arguments": "info \u003cuser\u003e",
+        "info": [
+          "Displays a \u003cuser\u003e\u0027s titles and their rank tier"
+        ]
+      },
+      {
+        "arguments": "set \u003cuser\u003e \u003ctitle\u003e",
+        "info": [
+          "Set\u0027s a \u003cuser\u003e\u0027s active title to \u003ctitle\u003e"
+        ]
+      },
+      {
+        "arguments": "add \u003cuser\u003e \u003ctitles\u003e",
+        "info": [
+          "Adds a \u003ctitle\u003e to a \u003cuser\u003e\u0027s available titles"
+        ]
+      },
+      {
+        "arguments": "remove \u003cuser\u003e \u003ctitles\u003e",
+        "info": [
+          "Removes a \u003ctitle\u003e from a \u003cuser\u003e\u0027s available titles"
+        ]
+      },
+      {
+        "arguments": "tier \u003cuser\u003e \u003ctier\u003e",
+        "info": [
+          "Sets a \u003cuser\u003e\u0027s rank tier to \u003ctier\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dialogues",
+    "permission": "arcadius.commands.dialogues",
+    "adminCommand": true,
+    "description": "Dialogues plugin command",
+    "category": "dialogues",
+    "usages": [
+      {
+        "arguments": "reload",
+        "info": [
+          "Reload dialogues and the plugin config"
+        ]
+      },
+      {
+        "arguments": "view \u003cdialogue\u003e[;\u003cnode\u003e]",
+        "info": [
+          "Views a dialogue or a node within a dialogue tree",
+          "Example usage:",
+          "/dialogues view abilityNpcConvo:node_dash"
+        ]
+      },
+      {
+        "arguments": "view \u003cdialogue\u003e[;\u003cnode\u003e] \u003cplayers\u003e",
+        "info": [
+          "Shows player(s) a dialogue or a node within a dialogue tree",
+          "Example usages:",
+          "/dialogues view abilityNpcConvo:node_dash Julie",
+          "/dialogues view abilityNpcConvo:node_dash @a[distance\u003d..2]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "js",
+    "permission": "arcadius.commands.js",
+    "adminCommand": true,
+    "description": "Runs JavaScript code",
+    "category": "scripts",
+    "usages": [
+      {
+        "arguments": "\u003ccode\u003e",
+        "info": [
+          "Runs JavaScript code"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "scripts",
+    "permission": "arcadius.commands.scripts",
+    "adminCommand": true,
+    "aliases": [
+      "script"
+    ],
+    "description": "Command that provides access to plugin\u0027s scripting engine",
+    "category": "scripts",
+    "usages": [
+      {
+        "arguments": "reload-config",
+        "info": [
+          "Reloads the scripting plugin config"
+        ]
+      },
+      {
+        "arguments": "reload-scripts",
+        "info": [
+          "Reloads all currently active scripts"
+        ]
+      },
+      {
+        "arguments": "loaded list",
+        "info": [
+          "Lists all loaded scripts"
+        ]
+      },
+      {
+        "arguments": "loaded reload \u003cactive\u003e",
+        "info": [
+          "Reloads a specific script"
+        ]
+      },
+      {
+        "arguments": "loaded close \u003cactive\u003e",
+        "info": [
+          "Closes a loaded script"
+        ]
+      },
+      {
+        "arguments": "run \u003cscript\u003e",
+        "info": [
+          "Executes a \u003cscript\u003e"
+        ]
+      },
+      {
+        "arguments": "run \u003cscript\u003e [args\u003d\u003cstring\u003e] [-keep-loaded] [method\u003d\u003cstring\u003e]",
+        "info": [
+          "Executes a \u003cscript\u003e",
+          "Options:",
+          "\u0027args\u0027 - Sets the string arguments that are passed to the script",
+          "\u0027method\u0027 - specifies the name of the method to run after",
+          "the global scope has been executed",
+          "\u0027-keep-loaded\u0027 - If set, the script will stay loaded after",
+          "execution has finished, use this if the script has a",
+          "scheduler or event listener that needs to run for longer",
+          "than the script\u0027s initial lifetime"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ban",
+    "permission": "arcadius.ban",
+    "adminCommand": true,
+    "description": "Permanently bans a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "ipban",
+    "permission": "arcadius.ipban",
+    "adminCommand": true,
+    "description": "Permanently IP-bans a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "jail",
+    "permission": "arcadius.jail",
+    "adminCommand": true,
+    "aliases": [
+      "imprison"
+    ],
+    "description": "Jails a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ccell\u003e",
+        "info": [
+          "Jails a player"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003ccell\u003e \u003creason\u003e",
+        "info": [
+          "Jails a player for a specific reason"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "kick",
+    "permission": "arcadius.kick",
+    "adminCommand": true,
+    "description": "Kicks a player from the game",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Kicks a player"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003creason\u003e",
+        "info": [
+          "Kicks a player for a specific reason"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mute",
+    "permission": "arcadius.mute",
+    "adminCommand": true,
+    "description": "Permanently mutes a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "notes",
+    "permission": "arcadius.staffnotes",
+    "adminCommand": true,
+    "aliases": [
+      "staff-notes"
+    ],
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "list \u003cuser\u003e",
+        "info": [
+          "Lists all of a player\u0027s staff notes"
+        ]
+      },
+      {
+        "arguments": "add \u003cuser\u003e \u003ctext\u003e",
+        "info": [
+          "Adds a staff-note to a specified player"
+        ]
+      },
+      {
+        "arguments": "remove \u003cuser\u003e \u003cindex\u003e",
+        "info": [
+          "Removes a staff-note from a player"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "pardon-ban",
+    "permission": "arcadius.commands.pardon-ban",
+    "adminCommand": true,
+    "aliases": [
+      "pardonban",
+      "unban"
+    ],
+    "description": "Unbans a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "pardon-ipban",
+    "permission": "arcadius.commands.pardon-ipban",
+    "adminCommand": true,
+    "aliases": [
+      "unipban",
+      "pardonipban"
+    ],
+    "description": "Pardon\u0027s a player\u0027s IP ban",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "pardon-mute",
+    "permission": "arcadius.commands.pardon-mute",
+    "adminCommand": true,
+    "aliases": [
+      "pardonmute",
+      "unmute"
+    ],
+    "description": "Pardons a player\u0027s mute",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "pardon-softmute",
+    "permission": "arcadius.commands.pardon-softmute",
+    "adminCommand": true,
+    "aliases": [
+      "pardonsoftmute",
+      "unsoftmute"
+    ],
+    "description": "Pardons a player\u0027s softmute",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "punish",
+    "permission": "arcadius.commands.punish",
+    "adminCommand": true,
+    "description": "Opens the punishment GUI",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Opens the Punishment GUI for the specified player"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "seperate",
+    "permission": "arcadius.commands.seperate",
+    "adminCommand": true,
+    "description": "Seperates/unseparates 2 players",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cuser 1\u003e \u003cuser 2\u003e",
+        "info": [
+          "Separates/unseparates 2 players"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "softmute",
+    "permission": "arcadius.softmute",
+    "adminCommand": true,
+    "description": "Permanently softmutes a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "tempban",
+    "permission": "arcadius.ban",
+    "adminCommand": true,
+    "description": "Temporarily bans a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "tempipban",
+    "permission": "arcadius.ipban",
+    "adminCommand": true,
+    "description": "Temporarily IP-bans a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "tempjail",
+    "permission": "arcadius.jail",
+    "adminCommand": true,
+    "description": "Temporarily jails a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ccell\u003e \u003clength\u003e",
+        "info": [
+          "Imprisons a player for a specified length of time"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003ccell\u003e \u003clength\u003e \u003creason\u003e",
+        "info": [
+          "Temporarily imprisons a player for a specified reason"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tempmute",
+    "permission": "arcadius.mute",
+    "adminCommand": true,
+    "description": "Temporarily mutes a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "tempsoftmute",
+    "permission": "arcadius.softmute",
+    "adminCommand": true,
+    "description": "Temporarily softmutes a player",
+    "category": "punish",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e",
+        "info": []
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003ctime\u003e \u003creason\u003e",
+        "info": []
+      }
+    ]
+  },
+  {
+    "name": "editshop",
+    "permission": "arcadius.signshops.edit",
+    "adminCommand": true,
+    "aliases": [
+      "shopedit",
+      "signshop"
+    ],
+    "description": "Allows you to edit a shop",
+    "category": "signshops",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Displays help information"
+        ]
+      },
+      {
+        "arguments": "buy",
+        "info": [
+          "Makes the shop you\u0027re looking at a buy shop"
+        ]
+      },
+      {
+        "arguments": "sell",
+        "info": [
+          "Makes the shop you\u0027re looking at a sell shop"
+        ]
+      },
+      {
+        "arguments": "line \u003c2 | 3\u003e \u003ctext\u003e",
+        "info": [
+          "Changes either the 2nd or 3rd line of the",
+          "sign shop you\u0027re looking at"
+        ]
+      },
+      {
+        "arguments": "amount \u003camount: 1..64\u003e",
+        "info": [
+          "Changes the amount of items the shop sells/buys"
+        ]
+      },
+      {
+        "arguments": "price \u003cvalue: 1..\u003e",
+        "info": [
+          "Changes the price of the shop you\u0027re looking at"
+        ]
+      },
+      {
+        "arguments": "info",
+        "info": [
+          "Displays info about the shop you\u0027re looking at"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "shophistory",
+    "permission": "arcadius.commands.shophistory",
+    "adminCommand": true,
+    "description": "Shows the history of the shop you\u0027re looking at",
+    "category": "signshops",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shows the history of the shop you\u0027re looking at"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "shopreselling",
+    "permission": "arcadius.commands.shopreselling",
+    "adminCommand": true,
+    "aliases": [
+      "shopresell"
+    ],
+    "description": "Shop reselling",
+    "category": "signshops",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Shop reselling"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "market-bounds",
+    "permission": "arcadius.commands.market-bounds",
+    "adminCommand": true,
+    "description": "An ArcadiusMC command",
+    "category": "markets"
+  },
+  {
+    "name": "marketgui",
+    "permission": "arcadius.commands.marketgui",
+    "adminCommand": true,
+    "aliases": [
+      "marketmenu",
+      "market-menu",
+      "shopgui",
+      "shop-gui"
+    ],
+    "description": "Opens the player shop GUI",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the player shop GUI"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "markets",
+    "permission": "arcadius.commands.markets",
+    "adminCommand": true,
+    "aliases": [
+      "playershops"
+    ],
+    "description": "Player Shops admin command",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "reload-config",
+        "info": [
+          "Reloads the markets config."
+        ]
+      },
+      {
+        "arguments": "reload-plugin",
+        "info": [
+          "Reloads the entire markets plugin."
+        ]
+      },
+      {
+        "arguments": "save",
+        "info": [
+          "Saves the plugin."
+        ]
+      },
+      {
+        "arguments": "list [\u003cpage\u003e] [\u003cpage-size\u003e]",
+        "info": [
+          "Lists existing markets"
+        ]
+      },
+      {
+        "arguments": "create \u003cregion\u003e",
+        "info": [
+          "Creates a market."
+        ]
+      },
+      {
+        "arguments": "remove \u003cmarket\u003e",
+        "info": [
+          "Deletes a market"
+        ]
+      },
+      {
+        "arguments": "claim \u003cmarket\u003e \u003cuser\u003e",
+        "info": [
+          "Claims a market for a player"
+        ]
+      },
+      {
+        "arguments": "unclaim \u003cmarket\u003e",
+        "info": [
+          "Unclaims a market. (Does NOT reset the market.)"
+        ]
+      },
+      {
+        "arguments": "reset \u003cmarket\u003e",
+        "info": [
+          "Resets a market"
+        ]
+      },
+      {
+        "arguments": "merge \u003cmarket\u003e \u003cother\u003e",
+        "info": [
+          "Merges 2 markets together."
+        ]
+      },
+      {
+        "arguments": "unmerge \u003cmarket\u003e",
+        "info": [
+          "Unmerges 2 markets"
+        ]
+      },
+      {
+        "arguments": "eviction start \u003cmarket\u003e \u003creason\u003e",
+        "info": [
+          "Starts an eviction"
+        ]
+      },
+      {
+        "arguments": "eviction start \u003cmarket\u003e \u003creason\u003e \u003cdelay\u003e",
+        "info": [
+          "Starts an eviction with a set delay until eviction"
+        ]
+      },
+      {
+        "arguments": "eviction stop \u003cmarket\u003e",
+        "info": [
+          "Stops a market from being evicted"
+        ]
+      },
+      {
+        "arguments": "eviction info \u003cmarket\u003e",
+        "info": [
+          "Shows info about an eviction"
+        ]
+      },
+      {
+        "arguments": "price set \u003cmarket\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a market\u0027s price."
+        ]
+      },
+      {
+        "arguments": "price unset \u003cmarket\u003e",
+        "info": [
+          "Unsets a market\u0027s price."
+        ]
+      },
+      {
+        "arguments": "rent set \u003cmarket\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a market\u0027s rent."
+        ]
+      },
+      {
+        "arguments": "rent unset \u003cmarket\u003e",
+        "info": [
+          "Unsets a market\u0027s rent."
+        ]
+      },
+      {
+        "arguments": "connections list \u003cmarket\u003e",
+        "info": [
+          "Lists all the markets the specified market is connected to."
+        ]
+      },
+      {
+        "arguments": "connections add \u003cmarket\u003e \u003cother\u003e",
+        "info": [
+          "Connects 2 market shops together."
+        ]
+      },
+      {
+        "arguments": "connections remove \u003cmarket\u003e \u003cother\u003e",
+        "info": [
+          "Disconnects 2 markets."
+        ]
+      },
+      {
+        "arguments": "connections clear \u003cmarket\u003e",
+        "info": [
+          "Clears all connected markets a market has."
+        ]
+      },
+      {
+        "arguments": "entrances list \u003cmarket\u003e",
+        "info": [
+          "Lists a market\u0027s entrances."
+        ]
+      },
+      {
+        "arguments": "entrances add \u003cmarket\u003e",
+        "info": [
+          "Adds an entrance to a market",
+          "Adds the entrance by using the position the player is",
+          "standing at as the lectern\u0027s position,",
+          "and the first non-air block above the player as the block",
+          "the entrance sign is placed on."
+        ]
+      },
+      {
+        "arguments": "entrances remove \u003cmarket\u003e \u003cindex\u003e",
+        "info": [
+          "Removes an entrance at an index (use \u0027/markets entrances list\u0027)"
+        ]
+      },
+      {
+        "arguments": "group get \u003cmarket\u003e",
+        "info": [
+          "Gets a market\u0027s group."
+        ]
+      },
+      {
+        "arguments": "group set \u003cmarket\u003e \u003cgroup\u003e",
+        "info": [
+          "Sets a market\u0027s group."
+        ]
+      },
+      {
+        "arguments": "group unset \u003cmarket\u003e",
+        "info": [
+          "Sets a market\u0027s group."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mergeshop",
+    "permission": "arcadius.commands.mergeshop",
+    "adminCommand": true,
+    "aliases": [
+      "merge-shop"
+    ],
+    "description": "Lets you merge your shop with someone else\u0027s",
+    "category": "markets"
+  },
+  {
+    "name": "shopban",
+    "permission": "arcadius.commands.shopban",
+    "adminCommand": true,
+    "aliases": [
+      "shop-ban"
+    ],
+    "description": "Bans a player from your shop",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Bans a player from your shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "shoptrust",
+    "permission": "arcadius.commands.shoptrust",
+    "adminCommand": true,
+    "aliases": [
+      "shop-trust"
+    ],
+    "description": "Trusts a player in your shop",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Trusts a player in your shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "shopunban",
+    "permission": "arcadius.commands.shopunban",
+    "adminCommand": true,
+    "aliases": [
+      "shop-unban"
+    ],
+    "description": "Unbans a player from your shop",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Unbans a player from your shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "shopuntrust",
+    "permission": "arcadius.commands.shopuntrust",
+    "adminCommand": true,
+    "aliases": [
+      "shop-untrust"
+    ],
+    "description": "Untrusts a player from your shop",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Untrusts a player from your shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "transfershop",
+    "permission": "arcadius.commands.transfershop",
+    "adminCommand": true,
+    "aliases": [
+      "transfer-shop"
+    ],
+    "description": "Transfer a shop to another player",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Transfer a shop to another player"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "unclaimshop",
+    "permission": "arcadius.commands.unclaimshop",
+    "adminCommand": true,
+    "aliases": [
+      "unclaim-shop"
+    ],
+    "description": "Unclaim your shop",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Unclaim your shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "unmergeshop",
+    "permission": "arcadius.commands.unmergeshop",
+    "adminCommand": true,
+    "aliases": [
+      "unmerge-shop"
+    ],
+    "description": "Unmerge your shop",
+    "category": "markets",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Unmerge your shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "kit",
+    "permission": "arcadius.kits",
+    "adminCommand": true,
+    "aliases": [
+      "kits"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Displays a list of Kits"
+        ]
+      },
+      {
+        "arguments": "\u003ckit\u003e",
+        "info": [
+          "Uses a Kit"
+        ]
+      },
+      {
+        "arguments": "\u003ckit\u003e info",
+        "info": [
+          "Shows general info"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e data",
+        "info": [
+          "Displays the Usable data"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e silent",
+        "info": [
+          "Checks if a usable is silent"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions",
+        "info": [
+          "Shows all the existing Actions"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions clear",
+        "info": [
+          "Clears the Action list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests clear",
+        "info": [
+          "Clears the Condition list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003ckit\u003e tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "usable",
+    "permission": "arcadius.usables",
+    "adminCommand": true,
+    "aliases": [
+      "interactable",
+      "usables"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "reload",
+        "info": [
+          "Reloads the usables plugin"
+        ]
+      },
+      {
+        "arguments": "save",
+        "info": [
+          "Saves the usables plugin\u0027s data."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "usableblock",
+    "permission": "arcadius.usables.block",
+    "adminCommand": true,
+    "aliases": [
+      "usable_block",
+      "usable-block"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "\u003cblock: x,y,z\u003e info",
+        "info": [
+          "Shows general info"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e use",
+        "info": [
+          "Makes you use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e use \u003cplayers\u003e",
+        "info": [
+          "Makes a list of players use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e data",
+        "info": [
+          "Displays the Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e silent",
+        "info": [
+          "Checks if a usable is silent"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions",
+        "info": [
+          "Shows all the existing Actions"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions clear",
+        "info": [
+          "Clears the Action list"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests clear",
+        "info": [
+          "Clears the Condition list"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ]
+      },
+      {
+        "arguments": "\u003cblock: x,y,z\u003e tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "usableentity",
+    "permission": "arcadius.usables.entity",
+    "adminCommand": true,
+    "aliases": [
+      "usable_entity",
+      "usable-entity"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e info",
+        "info": [
+          "Shows general info"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e use",
+        "info": [
+          "Makes you use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e use \u003cplayers\u003e",
+        "info": [
+          "Makes a list of players use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e data",
+        "info": [
+          "Displays the Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e silent",
+        "info": [
+          "Checks if a usable is silent"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions",
+        "info": [
+          "Shows all the existing Actions"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions clear",
+        "info": [
+          "Clears the Action list"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests clear",
+        "info": [
+          "Clears the Condition list"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ]
+      },
+      {
+        "arguments": "\u003centity: uuid | @selector\u003e tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "usableitem",
+    "permission": "arcadius.usables.item",
+    "adminCommand": true,
+    "aliases": [
+      "usable_item"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "info",
+        "info": [
+          "Shows general info"
+        ]
+      },
+      {
+        "arguments": "use",
+        "info": [
+          "Makes you use the usable"
+        ]
+      },
+      {
+        "arguments": "use \u003cplayers\u003e",
+        "info": [
+          "Makes a list of players use the usable"
+        ]
+      },
+      {
+        "arguments": "data",
+        "info": [
+          "Displays the Usable data"
+        ]
+      },
+      {
+        "arguments": "data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ]
+      },
+      {
+        "arguments": "data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ]
+      },
+      {
+        "arguments": "data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ]
+      },
+      {
+        "arguments": "data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ]
+      },
+      {
+        "arguments": "silent",
+        "info": [
+          "Checks if a usable is silent"
+        ]
+      },
+      {
+        "arguments": "silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ]
+      },
+      {
+        "arguments": "actions",
+        "info": [
+          "Shows all the existing Actions"
+        ]
+      },
+      {
+        "arguments": "actions clear",
+        "info": [
+          "Clears the Action list"
+        ]
+      },
+      {
+        "arguments": "actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ]
+      },
+      {
+        "arguments": "actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ]
+      },
+      {
+        "arguments": "actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      },
+      {
+        "arguments": "tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ]
+      },
+      {
+        "arguments": "tests clear",
+        "info": [
+          "Clears the Condition list"
+        ]
+      },
+      {
+        "arguments": "tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ]
+      },
+      {
+        "arguments": "tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ]
+      },
+      {
+        "arguments": "tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "usabletriggers",
+    "permission": "arcadius.usables.trigger",
+    "adminCommand": true,
+    "aliases": [
+      "usable_triggers",
+      "triggers"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "create \u003cname\u003e",
+        "info": [
+          "Defines a new trigger, using your world edit",
+          "selection as the trigger\u0027s area"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e rename \u003ctrigger name\u003e \u003cnew name\u003e",
+        "info": [
+          "Renames a trigger to \u003cname\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e redefine \u003ctrigger name\u003e",
+        "info": [
+          "Redefines a trigger to your current world edit selection"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e select",
+        "info": [
+          "Makes a trigger become your WorldEdit selection."
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e remove",
+        "info": [
+          "Removes a trigger"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e info",
+        "info": [
+          "Shows general info"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e use",
+        "info": [
+          "Makes you use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e use \u003cplayers\u003e",
+        "info": [
+          "Makes a list of players use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e data",
+        "info": [
+          "Displays the Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e silent",
+        "info": [
+          "Checks if a usable is silent"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions",
+        "info": [
+          "Shows all the existing Actions"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions clear",
+        "info": [
+          "Clears the Action list"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests clear",
+        "info": [
+          "Clears the Condition list"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ]
+      },
+      {
+        "arguments": "\u003ctrigger\u003e tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "virtual-usable",
+    "permission": "arcadius.commands.virtual-usable",
+    "adminCommand": true,
+    "aliases": [
+      "vusable",
+      "virtualusable"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "create \u003cname\u003e",
+        "info": [
+          "Creates a virtual usable."
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e rename",
+        "info": [
+          "Renames a virtual usable"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e info",
+        "info": [
+          "Shows general info"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e use",
+        "info": [
+          "Makes you use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e use \u003cplayers\u003e",
+        "info": [
+          "Makes a list of players use the usable"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e data",
+        "info": [
+          "Displays the Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e silent",
+        "info": [
+          "Checks if a usable is silent"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions",
+        "info": [
+          "Shows all the existing Actions"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions clear",
+        "info": [
+          "Clears the Action list"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests clear",
+        "info": [
+          "Clears the Condition list"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ]
+      },
+      {
+        "arguments": "\u003cvalue\u003e tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "warp",
+    "permission": "arcadius.warps",
+    "adminCommand": true,
+    "aliases": [
+      "warps"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "usables",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Displays a list of Warps"
+        ]
+      },
+      {
+        "arguments": "\u003cwarp\u003e destination",
+        "info": [
+          "Displays a warp\u0027s current destination location"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e destination set",
+        "info": [
+          "Sets a warp\u0027s destination to where you\u0027re standing"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e destination set \u003cpos: x,y,z\u003e",
+        "info": [
+          "Sets a warp\u0027s position to the given xyz coordinates"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e instant",
+        "info": [
+          "Shows if a warp will always instantly teleport players or not"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e instant \u003ctrue | false\u003e",
+        "info": [
+          "Sets if a warp will always instantly teleport players or not"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e",
+        "info": [
+          "Uses a Warp"
+        ]
+      },
+      {
+        "arguments": "\u003cwarp\u003e info",
+        "info": [
+          "Shows general info"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e data",
+        "info": [
+          "Displays the Usable data"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Usable data, if [path] is set, shows only",
+          "data at that path"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Usable data at a \u003cpath\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Usable data"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Usable data",
+          "and sets it to \u003ctag\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e silent",
+        "info": [
+          "Checks if a usable is silent"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e silent \u003ctrue | false\u003e",
+        "info": [
+          "Sets a usable to be silent or not"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions",
+        "info": [
+          "Shows all the existing Actions"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions clear",
+        "info": [
+          "Clears the Action list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions remove \u003cindices\u003e",
+        "info": [
+          "Removes a Action",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Action before the element at \u003cindex\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Action to the front of the Actions list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e actions set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Action at \u003cindex\u003e to \u003ctype\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests",
+        "info": [
+          "Shows all the existing Conditions"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests clear",
+        "info": [
+          "Clears the Condition list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests remove \u003cindices\u003e",
+        "info": [
+          "Removes a Condition",
+          "Examples:",
+          "- remove 1: Removes an element at index 1",
+          "- remove 1..3: Removes all elements between indices 1 through 3"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests add \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests add -at \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds an Condition before the element at \u003cindex\u003e"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests add -first \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Adds a Condition to the front of the Conditions list"
+        ],
+        "adminUse": true
+      },
+      {
+        "arguments": "\u003cwarp\u003e tests set \u003cindex\u003e \u003ctype\u003e [\u003cinput\u003e]",
+        "info": [
+          "Sets the Condition at \u003cindex\u003e to \u003ctype\u003e"
+        ],
+        "adminUse": true
+      }
+    ]
+  },
+  {
+    "name": "factions",
+    "permission": "arcadius.commands.factions",
+    "adminCommand": true,
+    "description": "Factions Admin Command",
+    "category": "factions",
+    "usages": [
+      {
+        "arguments": "reload-config",
+        "info": [
+          "Reloads the Factions config"
+        ]
+      },
+      {
+        "arguments": "reload-factions",
+        "info": [
+          "Reloads all factions from disk"
+        ]
+      },
+      {
+        "arguments": "save",
+        "info": [
+          "Saves the factions plugin"
+        ]
+      },
+      {
+        "arguments": "list",
+        "info": [
+          "Lists all existing factions"
+        ]
+      },
+      {
+        "arguments": "create \u003cid\u003e",
+        "info": [
+          "Creates a faction"
+        ]
+      },
+      {
+        "arguments": "delete \u003cfaction\u003e",
+        "info": [
+          "Deletes a faction"
+        ]
+      },
+      {
+        "arguments": "join \u003cfaction\u003e \u003cplayer\u003e",
+        "info": [
+          "Makes a player join a faction"
+        ]
+      },
+      {
+        "arguments": "leave \u003cplayer\u003e",
+        "info": [
+          "Makes a player leave a faction"
+        ]
+      },
+      {
+        "arguments": "reputation get \u003cplayer\u003e",
+        "info": [
+          "Gets a player\u0027s reputation in their current faction"
+        ]
+      },
+      {
+        "arguments": "reputation get \u003cplayer\u003e \u003cfaction\u003e",
+        "info": [
+          "Gets a players reputation in a specific faction"
+        ]
+      },
+      {
+        "arguments": "reputation add \u003cplayer\u003e \u003camount\u003e",
+        "info": [
+          "Adds to a player\u0027s base-reputation in their current faction"
+        ]
+      },
+      {
+        "arguments": "reputation add \u003cplayer\u003e \u003camount\u003e \u003cfaction\u003e",
+        "info": [
+          "Adds to a player\u0027s base-reputation in a specific faction"
+        ]
+      },
+      {
+        "arguments": "reputation subtract \u003cplayer\u003e \u003camount\u003e",
+        "info": [
+          "Subtracts from a player\u0027s base-reputation in their current faction"
+        ]
+      },
+      {
+        "arguments": "reputation subtract \u003cplayer\u003e \u003camount\u003e \u003cfaction\u003e",
+        "info": [
+          "Subtracts from a player\u0027s base-reputation in a specific faction"
+        ]
+      },
+      {
+        "arguments": "reputation set \u003cplayer\u003e \u003camount\u003e",
+        "info": [
+          "Sets a player\u0027s base-reputation in their current faction"
+        ]
+      },
+      {
+        "arguments": "reputation set \u003cplayer\u003e \u003camount\u003e \u003cfaction\u003e",
+        "info": [
+          "Sets a player\u0027s base-reputation in a specific faction"
+        ]
+      },
+      {
+        "arguments": "property list \u003cfaction\u003e",
+        "info": [
+          "Lists all of a faction\u0027s properties"
+        ]
+      },
+      {
+        "arguments": "property get \u003cfaction\u003e \u003cproperty\u003e",
+        "info": [
+          "Gets a property value"
+        ]
+      },
+      {
+        "arguments": "property set \u003cfaction\u003e \u003cproperty\u003e \u003cinput\u003e",
+        "info": [
+          "Sets a faction\u0027s property"
+        ]
+      },
+      {
+        "arguments": "property unset \u003cfaction\u003e \u003cproperty\u003e",
+        "info": [
+          "Unsets a property value"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "autosell",
+    "permission": "arcadius.commands.autosell",
+    "adminCommand": true,
+    "aliases": [
+      "autoselling",
+      "auto_sell",
+      "auto_selling"
+    ],
+    "description": "Admin command for managing players\u0027 auto sell",
+    "category": "sellshop",
+    "usages": [
+      {
+        "arguments": "list \u003cplayer\u003e",
+        "info": [
+          "Lists all of the auto-sell material of a \u003cplayer\u003e"
+        ]
+      },
+      {
+        "arguments": "add \u003cplayer\u003e \u003cmaterial\u003e",
+        "info": [
+          "Adds a \u003cmaterial\u003e to a \u003cplayer\u003e\u0027s auto-sell list"
+        ]
+      },
+      {
+        "arguments": "remove \u003cplayer\u003e \u003cmaterial\u003e",
+        "info": [
+          "Removes a \u003cmaterial\u003e from a \u003cplayer\u003e\u0027s auto-sell list"
+        ]
+      },
+      {
+        "arguments": "clear \u003cplayer\u003e",
+        "info": [
+          "Clears a \u003cplayer\u003e\u0027s auto-sell list"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "open-sellshop-menu",
+    "permission": "arcadius.commands.open-sellshop-menu",
+    "adminCommand": true,
+    "description": "Opens a specific sellshop page for a player",
+    "category": "sellshop"
+  },
+  {
+    "name": "shop",
+    "permission": "arcadius.commands.shop",
+    "adminCommand": true,
+    "aliases": [
+      "sellshop"
+    ],
+    "description": "Opens the server\u0027s sell shop",
+    "category": "sellshop",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Opens the server\u0027s sell shop"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "user_earnings",
+    "permission": "arcadius.commands.user_earnings",
+    "adminCommand": true,
+    "aliases": [
+      "userearnings",
+      "earnings"
+    ],
+    "description": "Manage earnings with players",
+    "category": "sellshop",
+    "usages": [
+      {
+        "arguments": "get \u003cplayer\u003e",
+        "info": [
+          "Gets a list of all Rhines a player has earned from selling materials"
+        ]
+      },
+      {
+        "arguments": "clear \u003cplayer\u003e",
+        "info": [
+          "Clears a player\u0027s earnings"
+        ]
+      },
+      {
+        "arguments": "add \u003cplayer\u003e \u003cmaterial\u003e \u003camount\u003e",
+        "info": [
+          "Adds earnings to a player"
+        ]
+      },
+      {
+        "arguments": "remove \u003cplayer\u003e \u003cmaterial\u003e \u003camount\u003e",
+        "info": [
+          "Removes earnings from a player"
+        ]
+      },
+      {
+        "arguments": "set \u003cplayer\u003e \u003cmaterial\u003e \u003camount\u003e",
+        "info": [
+          "Sets a player\u0027s material earnings"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "serverlist",
+    "permission": "arcadius.commands.serverlist",
+    "adminCommand": true,
+    "description": "Allows interacting with the serverlist plugin",
+    "category": "serverlist",
+    "usages": [
+      {
+        "arguments": "reload",
+        "info": [
+          "Reloads the serverlist plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "close-inventory",
+    "permission": "arcadius.commands.closeinv",
+    "adminCommand": true,
+    "aliases": [
+      "close-menu"
+    ],
+    "description": "Closes a player\u0027s inventory",
+    "category": "tools",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Closes a player\u0027s inventory"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e \u003creason\u003e",
+        "info": [
+          "Closes a player\u0027s inventory for a specific reason"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "set-user-property",
+    "permission": "arcadius.commands.setuserproperty",
+    "adminCommand": true,
+    "description": "Sets the value of any user property",
+    "category": "tools",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003cproperty\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a user\u0027s user-property value"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "adventure",
+    "permission": "arcadius.commands.gamemode.adventure",
+    "adminCommand": true,
+    "aliases": [
+      "gma"
+    ],
+    "description": "Sets your gamemode to adventure",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets your gamemode to adventure"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s gamemode to adventure"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "alts",
+    "permission": "arcadius.commands.alts",
+    "adminCommand": true,
+    "aliases": [
+      "useralts",
+      "user_alts"
+    ],
+    "description": "Modify user alt accounts",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "info \u003cuser\u003e",
+        "info": [
+          "Shows alt account info relating to a \u003cuser\u003e"
+        ]
+      },
+      {
+        "arguments": "add \u003calt\u003e \u003cmain\u003e",
+        "info": [
+          "Marks an \u003calt\u003e player as an alt account for a \u003cmain\u003e"
+        ]
+      },
+      {
+        "arguments": "remove \u003calt\u003e \u003cmain\u003e",
+        "info": [
+          "Removes an \u003calt\u003e account from a \u003cmain\u003e account"
+        ]
+      },
+      {
+        "arguments": "clear \u003cmain\u003e",
+        "info": [
+          "Clears all alt account links from a \u003cmain\u003e account"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "arcadius",
+    "permission": "arcadius.commands.arcadius",
+    "adminCommand": true,
+    "description": "ArcadiusMC admin command",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "reload",
+        "info": [
+          "Reloads the plugin"
+        ]
+      },
+      {
+        "arguments": "reload-config",
+        "info": [
+          "Reloads the plugin config"
+        ]
+      },
+      {
+        "arguments": "save",
+        "info": [
+          "Forces the plugin to save all data"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "broadcast",
+    "permission": "arcadius.commands.broadcast",
+    "adminCommand": true,
+    "aliases": [
+      "announce",
+      "bc",
+      "ac"
+    ],
+    "description": "Broadcasts a message to the entire server.",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cmessage\u003e",
+        "info": [
+          "Broadcasts a \u003cmessage\u003e to the entire server"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "cooldown",
+    "permission": "arcadius.commands.cooldown",
+    "adminCommand": true,
+    "description": "Controls various cooldowns",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e \u003ccategory\u003e",
+        "info": [
+          "Shows how long a \u003cuser\u003e is on cooldown in a \u003ccategory\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cuser\u003e \u003ccategory\u003e add [\u003clength\u003e]",
+        "info": [
+          "Adds a \u003cuser\u003e into a \u003ccategory\u003e\u0027s cooldown.",
+          "If \u003clength\u003e is not set, the cooldown will never end"
+        ]
+      },
+      {
+        "arguments": "\u003cuser\u003e \u003ccategory\u003e remove",
+        "info": [
+          "Removes a \u003cuser\u003e from a cooldown in a \u003ccategory\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "creative",
+    "permission": "arcadius.commands.gamemode.creative",
+    "adminCommand": true,
+    "aliases": [
+      "gmc"
+    ],
+    "description": "Sets your gamemode to creative",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets your gamemode to creative"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s gamemode to creative"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "getoffset",
+    "permission": "arcadius.commands.getoffset",
+    "adminCommand": true,
+    "description": "Gets the offset between 2 selected points",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Gets the offset between 2 selected points"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "getpos",
+    "permission": "arcadius.commands.getpos",
+    "adminCommand": true,
+    "description": "Gets the accurate position of a player",
+    "category": "admin"
+  },
+  {
+    "name": "gm",
+    "permission": "arcadius.commands.gamemode",
+    "adminCommand": true,
+    "aliases": [
+      "gamemode"
+    ],
+    "description": "Sets your or another player\u0027s gamemode",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cgame mode\u003e",
+        "info": [
+          "Sets your game mode to \u003cgame mode\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cgame mode\u003e \u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s game mode to \u003cgame mode\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "invstore",
+    "permission": "arcadius.commands.invstore",
+    "adminCommand": true,
+    "description": "Lets you give players separate inventories",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "reload",
+        "info": [
+          "Reloads stored inventories"
+        ]
+      },
+      {
+        "arguments": "save",
+        "info": [
+          "Saves all currently stored inventories to disk"
+        ]
+      },
+      {
+        "arguments": "save \u003cplayer\u003e \u003ccategory: quoted string\u003e [-keep-items]",
+        "info": [
+          "Saves a \u003cplayer\u003e\u0027s inventory in a \u003ccategory\u003e",
+          "If the \u0027-keep-items\u0027 flag is not set, the player\u0027s",
+          "inventory is cleared after it\u0027s stored away"
+        ]
+      },
+      {
+        "arguments": "return \u003cplayer\u003e \u003ccategory: quoted string\u003e",
+        "info": [
+          "Returns all items a \u003cplayer\u003e has stored in a \u003ccategory\u003e",
+          "This command will also remove the items from storage"
+        ]
+      },
+      {
+        "arguments": "swap \u003cplayer\u003e \u003ccategory: quoted string\u003e",
+        "info": [
+          "Swaps a \u003cplayer\u003e\u0027s current inventory with the one stored in",
+          "\u003ccategory\u003e. If the player has no stored inventory in \u003ccategory\u003e",
+          "then no items are returned.",
+          "In either case, the player\u0027s current items are saved in",
+          "the \u003ccategory\u003e"
+        ]
+      },
+      {
+        "arguments": "give \u003cplayer\u003e \u003ccategory: quoted string\u003e",
+        "info": [
+          "Works like the \u0027return\u0027 argument, except, it doesn\u0027t",
+          "remove the items from storage"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "launch",
+    "permission": "arcadius.commands.launch",
+    "adminCommand": true,
+    "aliases": [
+      "rocket"
+    ],
+    "description": "Rockets a player in a given direction",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003centities\u003e",
+        "info": [
+          "Launches every selected entity in",
+          "the direction you\u0027re looking"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e \u003cvelocity: x,y,z\u003e",
+        "info": [
+          "Sets the velocity of every entity"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e add \u003cvelocity: x,y,z\u003e",
+        "info": [
+          "Adds to the velocity of every entity"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e at \u003cposition: x,y,z\u003e [\u003cmultiplier: number\u003e]",
+        "info": [
+          "Launches all \u003centities\u003e towards a specified \u003cposition\u003e",
+          "\u003cmultiplier\u003e is an optional scalar for the velocity"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e at entity \u003cselector\u003e [\u003cmultiplier: number\u003e]",
+        "info": [
+          "Launches all entities at the selected entities",
+          "\u003cmultiplier\u003e is an optional scalar for the velocity"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "memory",
+    "permission": "arcadius.commands.memory",
+    "adminCommand": true,
+    "aliases": [
+      "mem"
+    ],
+    "description": "Displays current memory usage information",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Displays current memory usage information"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "playertime",
+    "permission": "arcadius.commands.playertime",
+    "adminCommand": true,
+    "aliases": [
+      "ptime"
+    ],
+    "description": "Changes the game time for a player",
+    "category": "admin"
+  },
+  {
+    "name": "sign",
+    "permission": "arcadius.commands.sign",
+    "adminCommand": true,
+    "aliases": [
+      "editsign"
+    ],
+    "description": "Allows you to edit a sign",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cpos: x,y,z\u003e clear",
+        "info": [
+          "Clears the sign of all text"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e copy",
+        "info": [
+          "Copies the sign\u0027s content"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e paste",
+        "info": [
+          "Pastes your copied sign contents onto a sign"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e \u003cline: number(1..4)\u003e set \u003ctext\u003e",
+        "info": [
+          "Sets a sign\u0027s \u003cline\u003e to \u003ctext\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e \u003cline: number(1..4)\u003e clear",
+        "info": [
+          "Clears \u003cline\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e type \u003ctype\u003e",
+        "info": [
+          "Sets the sign\u0027s type"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e glow \u003ctrue | false\u003e",
+        "info": [
+          "Makes a sign glow/not glow"
+        ]
+      },
+      {
+        "arguments": "\u003cpos: x,y,z\u003e waxed \u003ctrue | false\u003e",
+        "info": [
+          "Sets a sign to be waxed or not"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "skull",
+    "permission": "arcadius.commands.skull",
+    "adminCommand": true,
+    "description": "Gets a player\u0027s skull",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Gets a \u003cplayer\u003e\u0027s skull"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "smite",
+    "permission": "arcadius.commands.smite",
+    "adminCommand": true,
+    "description": "Smites a user lol. This command will deal damage",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cuser\u003e",
+        "info": [
+          "Smites a \u003cuser\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "spectator",
+    "permission": "arcadius.commands.gamemode.spectator",
+    "adminCommand": true,
+    "aliases": [
+      "gmsp"
+    ],
+    "description": "Sets your gamemode to spectator",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets your gamemode to spectator"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s gamemode to spectator"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "speed",
+    "permission": "arcadius.commands.speed",
+    "adminCommand": true,
+    "description": "An ArcadiusMC command",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "walk query",
+        "info": [
+          "Queries your walking speed"
+        ]
+      },
+      {
+        "arguments": "walk query \u003cplayer\u003e",
+        "info": [
+          "Queries a \u003cplayer\u003e\u0027s walking speed"
+        ]
+      },
+      {
+        "arguments": "walk \u003cvalue: number(-10, 10)\u003e",
+        "info": [
+          "Sets your walking speed"
+        ]
+      },
+      {
+        "arguments": "walk \u003cvalue: number(-10, 10)\u003e \u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s walking speed"
+        ]
+      },
+      {
+        "arguments": "fly query",
+        "info": [
+          "Queries your flying speed"
+        ]
+      },
+      {
+        "arguments": "fly query \u003cplayer\u003e",
+        "info": [
+          "Queries a \u003cplayer\u003e\u0027s flying speed"
+        ]
+      },
+      {
+        "arguments": "fly \u003cvalue: number(-10, 10)\u003e",
+        "info": [
+          "Sets your flying speed"
+        ]
+      },
+      {
+        "arguments": "fly \u003cvalue: number(-10, 10)\u003e \u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s flying speed"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sudo",
+    "permission": "arcadius.commands.sudo",
+    "adminCommand": true,
+    "aliases": [
+      "run-as"
+    ],
+    "description": "Execute a command as another player",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e \u003ccommand\u003e",
+        "info": [
+          "Makes a player perform a command"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e say \u003ctext\u003e",
+        "info": [
+          "Makes a player say something in chat"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "survival",
+    "permission": "arcadius.commands.gamemode",
+    "adminCommand": true,
+    "aliases": [
+      "gms"
+    ],
+    "description": "Sets your gamemode to survival",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets your gamemode to survival"
+        ]
+      },
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e\u0027s gamemode to survival"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tab",
+    "permission": "arcadius.commands.tab",
+    "adminCommand": true,
+    "aliases": [
+      "user_tab",
+      "usertab"
+    ],
+    "description": "Modifys a player\u0027s tab prefix/suffix/display name",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "update",
+        "info": [
+          "Updates the TAB menu for every player"
+        ]
+      },
+      {
+        "arguments": "reload",
+        "info": [
+          "Reloads the TAB list"
+        ]
+      },
+      {
+        "arguments": "name \u003cuser\u003e unset",
+        "info": [
+          "Clears a \u003cuser\u003e\u0027s tab display name"
+        ]
+      },
+      {
+        "arguments": "name \u003cuser\u003e \u003ctext\u003e",
+        "info": [
+          "Sets a \u003cuser\u003e\u0027s tab display name"
+        ]
+      },
+      {
+        "arguments": "prefix \u003cuser\u003e unset",
+        "info": [
+          "Clears a \u003cuser\u003e\u0027s tab prefix"
+        ]
+      },
+      {
+        "arguments": "prefix \u003cuser\u003e \u003ctext\u003e",
+        "info": [
+          "Sets a \u003cuser\u003e\u0027s tab prefix"
+        ]
+      },
+      {
+        "arguments": "suffix \u003cuser\u003e unset",
+        "info": [
+          "Clears a \u003cuser\u003e\u0027s tab suffix"
+        ]
+      },
+      {
+        "arguments": "suffix \u003cuser\u003e \u003ctext\u003e",
+        "info": [
+          "Sets a \u003cuser\u003e\u0027s tab suffix"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "teleport",
+    "permission": "arcadius.commands.teleport",
+    "adminCommand": true,
+    "aliases": [
+      "tp"
+    ],
+    "description": "Teleports yourself or other entities",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003clocation: x,y,z\u003e [\u003cyaw: -180..180\u003e] [\u003cpitch: -90..90\u003e]",
+        "info": [
+          "Teleports you to a \u003clocation\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e",
+        "info": [
+          "Teleports to an \u003centity\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e \u003centity\u003e",
+        "info": [
+          "Teleports all \u003centities\u003e to an \u003centity\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e \u003cpos: x,y,z\u003e",
+        "info": [
+          "Teleports all \u003centities\u003e to a \u003cpos\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e \u003cpos: x,y,z\u003e \u003cyaw: -180..180\u003e \u003cpitch: -90..90\u003e",
+        "info": [
+          "Teleports all \u003centities\u003e to a \u003clocation\u003e with a set \u003cyaw\u003e and \u003cpitch\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e \u003cpos: x,y,z\u003e facing entity \u003cfacing: entity\u003e",
+        "info": [
+          "Teleports \u003centities\u003e to a \u003clocation\u003e and makes them face an \u003centity\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003centities\u003e \u003cpos: x,y,z\u003e facing \u003cfacing: x,y,z\u003e",
+        "info": [
+          "Teleports \u003centities\u003e to a \u003clocation\u003e and makes them face a position"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tellrawf",
+    "permission": "arcadius.commands.tellrawf",
+    "adminCommand": true,
+    "aliases": [
+      "tellraw",
+      "ftellraw"
+    ],
+    "description": "ArcadiusMC\u0027s version of /tellraw with more lax text input",
+    "category": "admin"
+  },
+  {
+    "name": "texttojson",
+    "permission": "arcadius.commands.texttojson",
+    "adminCommand": true,
+    "aliases": [
+      "tojson",
+      "text-to-json"
+    ],
+    "description": "Converts text into a JSON component",
+    "category": "admin"
+  },
+  {
+    "name": "time",
+    "permission": "arcadius.commands.time",
+    "adminCommand": true,
+    "description": "Sets the time in your world",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "set \u003cday | noon | night | midnight\u003e",
+        "info": [
+          "Sets the time in your world to a ",
+          "corresponding constant"
+        ]
+      },
+      {
+        "arguments": "set \u003ctime: world time\u003e",
+        "info": [
+          "Sets the world time"
+        ]
+      },
+      {
+        "arguments": "add \u003ctime: world time\u003e",
+        "info": [
+          "Adds to \u003ctime\u003e the world\u0027s time"
+        ]
+      },
+      {
+        "arguments": "get [\u003cworld\u003e]",
+        "info": [
+          "Gets the current world time in [world].",
+          "If [world] is not set, gets the time in",
+          "the world you\u0027re in"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "timefield",
+    "permission": "arcadius.commands.timefield",
+    "adminCommand": true,
+    "description": "Allows you to edit users\u0027 timestamp fields",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "query \u003cuser\u003e",
+        "info": [
+          "Shows a user\u0027s time field values"
+        ]
+      },
+      {
+        "arguments": "query \u003cuser\u003e \u003cfield\u003e",
+        "info": [
+          "Shows a specific field\u0027s value for a player"
+        ]
+      },
+      {
+        "arguments": "set \u003cfield\u003e \u003cuser\u003e present",
+        "info": [
+          "Sets a time field\u0027s value to the present for a player"
+        ]
+      },
+      {
+        "arguments": "set \u003cfield\u003e \u003cuser\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a time field\u0027s value to a set value"
+        ]
+      },
+      {
+        "arguments": "unset \u003cfield\u003e \u003cuser\u003e",
+        "info": [
+          "Removes a field\u0027s value from a player"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "top",
+    "permission": "arcadius.commands.teleport",
+    "adminCommand": true,
+    "description": "Teleports you to the top block in your X and Z pos",
+    "category": "admin"
+  },
+  {
+    "name": "tp_exact",
+    "permission": "arcadius.commands.teleport",
+    "adminCommand": true,
+    "description": "Command for more precise teleportation",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "world\u003d\u003cworld\u003e x\u003d\u003ccord\u003e y\u003d\u003ccord\u003e z\u003d\u003ccord\u003e [yaw\u003d\u003cvalue\u003e] [pitch\u003d\u003cvalue\u003e] [targets\u003d\u003ctarget selector\u003e]",
+        "info": [
+          "Teleports you to the location specified in the parameters"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "vanish",
+    "permission": "arcadius.vanish",
+    "adminCommand": true,
+    "aliases": [
+      "v"
+    ],
+    "description": "Allows staff to become invisible to non-staff",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Allows staff to become invisible to non-staff"
+        ]
+      },
+      {
+        "arguments": "silent",
+        "info": [
+          "Toggles vanish without a join/leave message"
+        ]
+      },
+      {
+        "arguments": "\u003cother\u003e",
+        "info": [
+          "Toggles vanish for another player"
+        ]
+      },
+      {
+        "arguments": "\u003cother\u003e silent",
+        "info": [
+          "Toggles vanish for another player without announcing a join/leave message"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "world",
+    "permission": "arcadius.commands.teleport",
+    "adminCommand": true,
+    "description": "Teleports you or another player into a world",
+    "category": "admin",
+    "usages": [
+      {
+        "arguments": "\u003cworld\u003e",
+        "info": [
+          "Teleports you into a \u003cworld\u003e"
+        ]
+      },
+      {
+        "arguments": "\u003cworld\u003e \u003cuser\u003e",
+        "info": [
+          "Teleports a \u003cuser\u003e into a \u003cworld\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "findwaypoint",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "aliases": [
+      "findpole",
+      "findpost",
+      "find-waypoint"
+    ],
+    "description": "Shows you the nearest waypoint",
+    "category": "waypoints"
+  },
+  {
+    "name": "homewaypoint",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "aliases": [
+      "homepole",
+      "homepost"
+    ],
+    "description": "Takes you to your home waypoint",
+    "category": "waypoints",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Takes you to your home waypoint"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "invite",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "description": "Invites users to your home waypoint",
+    "category": "waypoints",
+    "usages": [
+      {
+        "arguments": "\u003cusers\u003e",
+        "info": [
+          "Invites users to your home waypoint"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "listwaypoints",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "aliases": [
+      "listregions",
+      "regions",
+      "regionlist",
+      "waypointlist"
+    ],
+    "description": "Lists named waypoints",
+    "category": "waypoints",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Lists named waypoints"
+        ]
+      },
+      {
+        "arguments": "\u003cpage: number(1..)\u003e [\u003cpage size: number(5..20)\u003e]",
+        "info": [
+          "Lists named waypoints on a specific \u003cpage\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "movein",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "aliases": [
+      "sethomepole",
+      "sethomepost"
+    ],
+    "description": "Sets your home waypoint",
+    "category": "waypoints",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Sets your home waypoint"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "spawn",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "description": "Alias for \u0027/vr Hazelguard\u0027",
+    "category": "waypoints"
+  },
+  {
+    "name": "visit",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "aliases": [
+      "v",
+      "vr",
+      "visitregion"
+    ],
+    "description": "Visits a teleport waypoint",
+    "category": "waypoints",
+    "usages": [
+      {
+        "arguments": "\u003cwaypoint name\u003e",
+        "info": [
+          "Visits a teleport \u003cwaypoint\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "waypointgui",
+    "permission": "arcadius.waypoints",
+    "adminCommand": true,
+    "description": "Opens the Waypoint GUI",
+    "category": "waypoints"
+  },
+  {
+    "name": "waypoints",
+    "permission": "arcadius.waypoints.admin",
+    "adminCommand": true,
+    "description": "Waypoints admin commands",
+    "category": "waypoints",
+    "usages": [
+      {
+        "arguments": "save",
+        "info": [
+          "Saves all waypoints"
+        ]
+      },
+      {
+        "arguments": "reload-config",
+        "info": [
+          "Reloads the waypoints config"
+        ]
+      },
+      {
+        "arguments": "reload-all",
+        "info": [
+          "Reloads ALL waypoints"
+        ]
+      },
+      {
+        "arguments": "update-all",
+        "info": [
+          "Updates all waypoints"
+        ]
+      },
+      {
+        "arguments": "update-webmap \u003cwaypoint\u003e",
+        "info": [
+          "Updates the webmap marker of a waypoint"
+        ]
+      },
+      {
+        "arguments": "info \u003cwaypoint\u003e",
+        "info": [
+          "Shows info about a waypoint"
+        ]
+      },
+      {
+        "arguments": "update \u003cwaypoint\u003e",
+        "info": [
+          "Updates a specific waypoint"
+        ]
+      },
+      {
+        "arguments": "remove \u003cwaypoint\u003e",
+        "info": [
+          "Deletes a waypoint"
+        ]
+      },
+      {
+        "arguments": "draw-bounds \u003cwaypoint\u003e",
+        "info": [
+          "Draws the bounds of a waypoint"
+        ]
+      },
+      {
+        "arguments": "discover \u003cwaypoint\u003e \u003cplayer\u003e",
+        "info": [
+          "Discovers a waypoint for a player"
+        ]
+      },
+      {
+        "arguments": "discovered-players list \u003cwaypoint\u003e",
+        "info": [
+          "Lists all players that have discovered a waypoint"
+        ]
+      },
+      {
+        "arguments": "discovered-players clear \u003cwaypoint\u003e",
+        "info": [
+          "Clears all players from a waypoint\u0027s discovered list"
+        ]
+      },
+      {
+        "arguments": "discovered-players remove \u003cwaypoint\u003e \u003cplayer\u003e",
+        "info": [
+          "Removes a player from a waypoint\u0027s discovered list"
+        ]
+      },
+      {
+        "arguments": "create faction-region",
+        "info": [
+          "Creates a faction region waypoint"
+        ]
+      },
+      {
+        "arguments": "create admin",
+        "info": [
+          "Creates an invisible admin waypoint"
+        ]
+      },
+      {
+        "arguments": "create region-pole",
+        "info": [
+          "Creates a region-pole waypoint"
+        ]
+      },
+      {
+        "arguments": "move \u003cwaypoint\u003e",
+        "info": [
+          "Moves a waypoint to where you\u0027re standing"
+        ]
+      },
+      {
+        "arguments": "move \u003cwaypoint\u003e \u003cpos: x y z\u003e",
+        "info": [
+          "Moves a waypoint to a specified xyz position"
+        ]
+      },
+      {
+        "arguments": "residents list \u003cwaypoint\u003e",
+        "info": [
+          "Lists all residents in a waypoints"
+        ]
+      },
+      {
+        "arguments": "residents add \u003cwaypoint\u003e \u003cplayers\u003e",
+        "info": [
+          "Adds all \u003cplayers\u003e to be residents of \u003cwaypoint\u003e"
+        ]
+      },
+      {
+        "arguments": "residents remove \u003cwaypoint\u003e \u003cresident\u003e",
+        "info": [
+          "Removes a resident from a waypoint"
+        ]
+      },
+      {
+        "arguments": "residents set \u003cwaypoint\u003e \u003cplayer\u003e \u003ctime\u003e",
+        "info": [
+          "Sets a \u003cplayer\u003e to be a resident of a \u003cwaypoint\u003e with a specific movein \u003ctime\u003e"
+        ]
+      },
+      {
+        "arguments": "residents clear \u003cwaypoint\u003e",
+        "info": [
+          "Removes all residents from a waypoint"
+        ]
+      },
+      {
+        "arguments": "property list \u003cwaypoint\u003e",
+        "info": [
+          "Lists all property values in a waypoint"
+        ]
+      },
+      {
+        "arguments": "property unset \u003cwaypoint\u003e \u003cproperty\u003e",
+        "info": [
+          "Removes a property\u0027s value from a waypoint"
+        ]
+      },
+      {
+        "arguments": "property set \u003cwaypoint\u003e \u003cproperty\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets a property\u0027s value for a specific waypoint"
+        ]
+      },
+      {
+        "arguments": "property get \u003cwaypoint\u003e \u003cproperty\u003e",
+        "info": [
+          "Gets a property\u0027s value"
+        ]
+      },
+      {
+        "arguments": "column clear \u003cwaypoint\u003e",
+        "info": [
+          "Breaks the center column of a waypoint"
+        ]
+      },
+      {
+        "arguments": "column place \u003cwaypoint\u003e",
+        "info": [
+          "Places the center column of a waypoint"
+        ]
+      },
+      {
+        "arguments": "platform place \u003cwaypoint\u003e",
+        "info": [
+          "Places a platform for a waypoint"
+        ]
+      },
+      {
+        "arguments": "platform break \u003cwaypoint\u003e",
+        "info": [
+          "Breaks a waypoint\u0027s platform"
+        ]
+      },
+      {
+        "arguments": "description get \u003cwaypoint\u003e",
+        "info": [
+          "Gets a waypoint\u0027s description"
+        ]
+      },
+      {
+        "arguments": "description get-rendered \u003cwaypoint\u003e",
+        "info": [
+          "Gets a waypoint\u0027s rendered description"
+        ]
+      },
+      {
+        "arguments": "description set \u003cwaypoint\u003e \u003cdescription\u003e",
+        "info": [
+          "Sets a waypoint\u0027s description"
+        ]
+      },
+      {
+        "arguments": "creation-date get \u003cwaypoint\u003e",
+        "info": [
+          "Gets a waypoint\u0027s creation date"
+        ]
+      },
+      {
+        "arguments": "creation-date set \u003cwaypoint\u003e \u003ctime\u003e",
+        "info": [
+          "Sets a waypoint\u0027s creation date"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "docgen",
+    "permission": "arcadius.commands.docgen",
+    "adminCommand": true,
+    "description": "Generates documentation of all ArcadiusMC commands",
+    "category": "docs"
+  },
+  {
+    "name": "enchant",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "\u003cenchantment\u003e [\u003clevel: number(1..)\u003e]",
+        "info": [
+          "Applies the \u003cenchantment\u003e to your held item",
+          "with [level]. If [level] is not given, then",
+          "a level of 1 is used.",
+          "If the item is a book, enchanting it turns it",
+          "into an enchanted book"
+        ]
+      },
+      {
+        "arguments": "clear",
+        "info": [
+          "Clears all your held item\u0027s enchantments"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "item_attribute_modifiers",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "clear",
+        "info": [
+          "Clears the item\u0027s Attribute Modifiers"
+        ]
+      },
+      {
+        "arguments": "remove \u003cattribute\u003e",
+        "info": [
+          "Removes all modifiers which modify the",
+          "\u003cattribute\u003e value"
+        ]
+      },
+      {
+        "arguments": "remove attr \u003cattribute\u003e",
+        "info": [
+          "Same as above"
+        ]
+      },
+      {
+        "arguments": "remove slot \u003cequipment slot\u003e",
+        "info": [
+          "Removes all modifiers which apply to the",
+          "\u003cequipment slot\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "item_cooldown",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "aliases": [
+      "itemcooldown"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "\u003cmaterial\u003e",
+        "info": [
+          "Shows how long a \u003cmaterial\u003e is on cooldown for you"
+        ]
+      },
+      {
+        "arguments": "\u003cmaterial\u003e \u003ctime\u003e",
+        "info": [
+          "Sets your \u003cmaterial\u003e\u0027s cooldown to \u003ctime\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "item_data",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "aliases": [
+      "item_tags",
+      "itemnbt",
+      "itemdata",
+      "itemtags"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "give_command",
+        "info": [
+          "Creates a `/give` command for the item you\u0027re holding"
+        ]
+      },
+      {
+        "arguments": "",
+        "info": [
+          "Displays the Item data"
+        ]
+      },
+      {
+        "arguments": "view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Item data, if [path] is set, shows only",
+          "data at that path",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Item data at a \u003cpath\u003e",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Item data",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Item data",
+          "and sets it to \u003ctag\u003e",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "itemname",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "aliases": [
+      "nameitem",
+      "renameitem",
+      "itemrename"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "\u003ctext\u003e",
+        "info": [
+          "Sets the name of the item you\u0027re holding",
+          "Note:",
+          "If the \u003ctext\u003e is a JSON component (eg: {\"text\":\"Item Name\"})",
+          "The name won\u0027t automatically become non-italic",
+          "and white, you\u0027ll be required to manually set them to",
+          "that configuration"
+        ]
+      },
+      {
+        "arguments": "-clear",
+        "info": [
+          "Clears the name of the item you\u0027re holding"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "items",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "aliases": [
+      "itemstacks",
+      "itemstack",
+      "item"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "enchant \u003cenchantment\u003e [\u003clevel: number(1..)\u003e]",
+        "info": [
+          "Applies the \u003cenchantment\u003e to your held item",
+          "with [level]. If [level] is not given, then",
+          "a level of 1 is used.",
+          "If the item is a book, enchanting it turns it",
+          "into an enchanted book"
+        ]
+      },
+      {
+        "arguments": "enchant clear",
+        "info": [
+          "Clears all your held item\u0027s enchantments"
+        ]
+      },
+      {
+        "arguments": "lore clear",
+        "info": [
+          "Clears your held item\u0027s lore"
+        ]
+      },
+      {
+        "arguments": "lore add \u003ctext\u003e",
+        "info": [
+          "Adds \u003ctext\u003e to your held item\u0027s lore",
+          "Note:",
+          "If the \u003ctext\u003e is a JSON component (eg: {\"text\":\"Item Name\"})",
+          "The name won\u0027t automatically become non-italic",
+          "and white, you\u0027ll be required to manually set them to",
+          "that configuration"
+        ]
+      },
+      {
+        "arguments": "lore display",
+        "info": [
+          "Displays the lore of the item you\u0027re holding with index numbers"
+        ]
+      },
+      {
+        "arguments": "lore set \u003cindex\u003e \u003ctext\u003e",
+        "info": [
+          "Sets the lore on the specified line of the item you\u0027re holding"
+        ]
+      },
+      {
+        "arguments": "lore remove \u003cindices\u003e",
+        "info": [
+          "Removes the lore on the given line"
+        ]
+      },
+      {
+        "arguments": "name \u003ctext\u003e",
+        "info": [
+          "Sets the name of the item you\u0027re holding",
+          "Note:",
+          "If the \u003ctext\u003e is a JSON component (eg: {\"text\":\"Item Name\"})",
+          "The name won\u0027t automatically become non-italic",
+          "and white, you\u0027ll be required to manually set them to",
+          "that configuration"
+        ]
+      },
+      {
+        "arguments": "name -clear",
+        "info": [
+          "Clears the name of the item you\u0027re holding"
+        ]
+      },
+      {
+        "arguments": "data give_command",
+        "info": [
+          "Creates a `/give` command for the item you\u0027re holding"
+        ]
+      },
+      {
+        "arguments": "data",
+        "info": [
+          "Displays the Item data"
+        ]
+      },
+      {
+        "arguments": "data view [\u003cpath: nbt path\u003e]",
+        "info": [
+          "Displays Item data, if [path] is set, shows only",
+          "data at that path",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "data insert \u003cpath: nbt path\u003e \u003ctag\u003e",
+        "info": [
+          "Inserts a \u003ctag\u003e into Item data at a \u003cpath\u003e",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "data merge \u003ctag\u003e",
+        "info": [
+          "Merges a \u003ctag\u003e into Item data",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "data set \u003ctag\u003e",
+        "info": [
+          "Completely overwrites the existing Item data",
+          "and sets it to \u003ctag\u003e",
+          "Note: the \u003ctag\u003e and \u003cpath\u003e roots are the item\u0027s raw NBT",
+          "Not the \u0027tag\u0027 element."
+        ]
+      },
+      {
+        "arguments": "attributes clear",
+        "info": [
+          "Clears the item\u0027s Attribute Modifiers"
+        ]
+      },
+      {
+        "arguments": "attributes remove \u003cattribute\u003e",
+        "info": [
+          "Removes all modifiers which modify the",
+          "\u003cattribute\u003e value"
+        ]
+      },
+      {
+        "arguments": "attributes remove attr \u003cattribute\u003e",
+        "info": [
+          "Same as above"
+        ]
+      },
+      {
+        "arguments": "attributes remove slot \u003cequipment slot\u003e",
+        "info": [
+          "Removes all modifiers which apply to the",
+          "\u003cequipment slot\u003e"
+        ]
+      },
+      {
+        "arguments": "cooldown \u003cmaterial\u003e",
+        "info": [
+          "Shows how long a \u003cmaterial\u003e is on cooldown for you"
+        ]
+      },
+      {
+        "arguments": "cooldown \u003cmaterial\u003e \u003ctime\u003e",
+        "info": [
+          "Sets your \u003cmaterial\u003e\u0027s cooldown to \u003ctime\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lore",
+    "permission": "arcadius.commands.items",
+    "adminCommand": true,
+    "aliases": [
+      "itemlore",
+      "lores",
+      "itemlores"
+    ],
+    "description": "An ArcadiusMC command",
+    "category": "item",
+    "usages": [
+      {
+        "arguments": "clear",
+        "info": [
+          "Clears your held item\u0027s lore"
+        ]
+      },
+      {
+        "arguments": "add \u003ctext\u003e",
+        "info": [
+          "Adds \u003ctext\u003e to your held item\u0027s lore",
+          "Note:",
+          "If the \u003ctext\u003e is a JSON component (eg: {\"text\":\"Item Name\"})",
+          "The name won\u0027t automatically become non-italic",
+          "and white, you\u0027ll be required to manually set them to",
+          "that configuration"
+        ]
+      },
+      {
+        "arguments": "display",
+        "info": [
+          "Displays the lore of the item you\u0027re holding with index numbers"
+        ]
+      },
+      {
+        "arguments": "set \u003cindex\u003e \u003ctext\u003e",
+        "info": [
+          "Sets the lore on the specified line of the item you\u0027re holding"
+        ]
+      },
+      {
+        "arguments": "remove \u003cindices\u003e",
+        "info": [
+          "Removes the lore on the given line"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mail",
+    "permission": "arcadius.mail",
+    "adminCommand": true,
+    "description": "Mail command",
+    "category": "mail",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Mail command"
+        ]
+      },
+      {
+        "arguments": "\u003cpage: number(1..)\u003e [\u003cpage size: number(5..20)\u003e]",
+        "info": [
+          "Shows you your mail"
+        ]
+      },
+      {
+        "arguments": "read_other \u003cuser\u003e",
+        "info": [
+          "Reads another \u003cuser\u003e\u0027s mail"
+        ]
+      },
+      {
+        "arguments": "read_other \u003cuser\u003e [\u003cpage: number(1..)\u003e] [\u003cpage size: number(5..20)\u003e]",
+        "info": [
+          "Shows you a \u003cusers\u003e\u0027s mail"
+        ]
+      },
+      {
+        "arguments": "send \u003ctargets\u003e -anonymous \u003cmessage\u003e",
+        "info": [
+          "Sends a mail message to a \u003ctarget\u003e player"
+        ]
+      },
+      {
+        "arguments": "send \u003ctargets\u003e \u003cmessage\u003e",
+        "info": [
+          "Sends a mail message to a \u003ctarget\u003e player"
+        ]
+      },
+      {
+        "arguments": "send_item \u003ctarget\u003e -anonymous \u003cmessage\u003e",
+        "info": [
+          "Sends a mail message to a \u003ctarget\u003e player with an item"
+        ]
+      },
+      {
+        "arguments": "send_item \u003ctarget\u003e \u003cmessage\u003e",
+        "info": [
+          "Sends a mail message to a \u003ctarget\u003e player with an item"
+        ]
+      },
+      {
+        "arguments": "admin_send \u003ctargets\u003e [\u003coptions\u003e] message\u003d\u003cmessage\u003e",
+        "info": [
+          "Sends an admin mail message, options:",
+          "- [rhines\u003d\u003camount\u003e]: Sets the message\u0027s rhine rewards",
+          "- [gems\u003d\u003camount\u003e]: Sets the message\u0027s gem rewards",
+          "- [guildExp\u003d\u003camount\u003e]: Sets the GuildEXP reward",
+          "- [items\u003d\u003citem list\u003e]: Sets the items that are in the message",
+          "- [script\u003d\u003cscript name\u003e]: Script executed when mail is claimed",
+          "- [tags\u003d\u003ctag list\u003e]: Sets a list of string tags used to identify the message",
+          "- [-multiply-guild-exp]: Sets whether to use the GuildEXP multiplier or not when rewarding GuildEXP"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tpacancel",
+    "permission": "arcadius.commands.tpa",
+    "adminCommand": true,
+    "description": "Cancels a tpa request",
+    "category": "tpa",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Cancels a tpa request"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tpaccept",
+    "permission": "arcadius.commands.tpa",
+    "adminCommand": true,
+    "description": "Accepts a tpa request",
+    "category": "tpa",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Accepts a tpa request"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tpask",
+    "permission": "arcadius.commands.tpa",
+    "adminCommand": true,
+    "aliases": [
+      "tpa",
+      "tprequest",
+      "tpr",
+      "etpa",
+      "etpask"
+    ],
+    "description": "Asks a to teleport to a player.",
+    "category": "tpa",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Asks to teleport to a \u003cplayer\u003e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tpaskhere",
+    "permission": "arcadius.commands.tpa",
+    "adminCommand": true,
+    "aliases": [
+      "tpahere",
+      "eptahere",
+      "etpaskhere"
+    ],
+    "description": "Asks a player to teleport to them.",
+    "category": "tpa",
+    "usages": [
+      {
+        "arguments": "\u003cplayer\u003e",
+        "info": [
+          "Asks a \u003cplayer\u003e to teleport to you"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tpdeny",
+    "permission": "arcadius.commands.tpa",
+    "adminCommand": true,
+    "aliases": [
+      "tpadeny"
+    ],
+    "description": "Denies a tpa request",
+    "category": "tpa",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Denies a tpa request"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tpdenyall",
+    "permission": "arcadius.commands.tpa",
+    "adminCommand": true,
+    "description": "Denies all incoming tpa requests",
+    "category": "tpa",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Denies all incoming tpa requests"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "discord_appender_reload",
+    "permission": "arcadius.commands.discord_appender_reload",
+    "adminCommand": true,
+    "description": "Reloads the console-\u003ediscord appender",
+    "category": "discord",
+    "usages": [
+      {
+        "arguments": "",
+        "info": [
+          "Reloads the console-\u003ediscord appender"
+        ]
+      }
+    ]
+  }
+]

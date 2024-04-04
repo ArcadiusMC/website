@@ -4,7 +4,8 @@
   <div class="wiki-container">
     {{ partial "wiki-sidebar.html" .Parent }}
     <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-    <div class="wikicontent max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
+    <div class="wikicontent max-w-2xl px-6 pt-6 pb-16 prose dark:prose-invert dark:text-white">
+      {{ partial "toc.html" . }}
       {{.Content}}
     </div>
   </div>

@@ -1,4 +1,4 @@
-<div x-data="{ sidebarOpen: false }" class="wikisidebar dark:prose-invert dark:text-white">
+<div x-data="{ sidebarOpen: false }" class="wikisidebar dark:prose-invert dark:text-white text-gray-900">
   
   <div class="flex flex-row items-center justify-between p-4">
     <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="sidebarOpen = !sidebarOpen" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
@@ -11,10 +11,14 @@
 
   <div :class="{'sidebar-shown': sidebarOpen, 'sidebar-hidden': !sidebarOpen}">
     <b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b>
-    <hr>
+    <hr class="border-black dark:border-white">
 
-    {{ range .Pages }}
-    <a class="sidebar-href" href="{{ .RelPermalink }}"><p class="sidebar-p">{{ .Title }}</p></a>
+    {{ range .Pages.ByWeight }}
+      <a title="{{.Description}}" class="dark:text-white text-black" href="{{ .RelPermalink }}">
+        <p class="p-1 hover:bg-slate-400  dark:hover:bg-slate-700 rounded-md">
+          {{ .Title }}
+        </p>
+      </a>
     {{ end }}
   </div>
 </div>

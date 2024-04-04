@@ -3,21 +3,13 @@ type: "wiki"
 title: "Player Wiki"
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
+General information and guides about the server can be found here.
   
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
+If you're on a computer, the navbar can be found on the left, if you're
+on mobile, tap the three bars under the header image.
   
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
+The player wiki is ran by players and anyone is allowed to contribute to
+it, see [Contributing](/wiki/contributing) for more information.
   
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
-  
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
-  
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
-  
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
-  
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
-  
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.  
+
   

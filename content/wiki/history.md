@@ -4,7 +4,7 @@ linkTitle: "History"
 type: wiki
 weight: 1
 description: >
-  History
+  Server History
 ---
 
 &YAYAYYYASYYS HGUISTORY
