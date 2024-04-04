@@ -3,7 +3,7 @@
     <div class="index-bg bg-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto">
             <div style="margin-bottom: 20%;" class="grid items-center gap-8 lg:mt-56 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-                <div class="gray-margin col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+                <div class="gray-margin col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0 rounded-lg">
                     <h1 class="trajanpro pt-2 mb-2 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
                         {{ .Site.Title }}
                     </h1>
@@ -12,13 +12,14 @@
                     </h2>
                     <p class="max-w-xl mx-auto mb-6 font-normal lg:mx-0 xl:mb-2 md:text-lg xl:text-xl text-white">
                         IP:
-                        <button class="ip-copy" onclick="navigator.clipboard.writeText('arcadiusmc.net')">
-                            arcadiusmc.net
+                        <button class="ip-copy" onclick="navigator.clipboard.writeText('{{.Site.Params.Server_ip}}')">
+                            {{.Site.Params.Server_ip}}
                             <svg class="w-6 h-6 inline-block" fill="currentColor" width="800px" height="800px" viewBox="0 0 32 32" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
                                 <title></title>
                                 <path d="M27.2,8.22H23.78V5.42A3.42,3.42,0,0,0,20.36,2H5.42A3.42,3.42,0,0,0,2,5.42V20.36a3.43,3.43,0,0,0,3.42,3.42h2.8V27.2A2.81,2.81,0,0,0,11,30H27.2A2.81,2.81,0,0,0,30,27.2V11A2.81,2.81,0,0,0,27.2,8.22ZM5.42,21.91a1.55,1.55,0,0,1-1.55-1.55V5.42A1.54,1.54,0,0,1,5.42,3.87H20.36a1.55,1.55,0,0,1,1.55,1.55v2.8H11A2.81,2.81,0,0,0,8.22,11V21.91ZM28.13,27.2a.93.93,0,0,1-.93.93H11a.93.93,0,0,1-.93-.93V11a.93.93,0,0,1,.93-.93H27.2a.93.93,0,0,1,.93.93Z"/>
                             </svg>
                         </button>
+                        ({{.Site.Params.Server_version}})
                     </p>
                 </div>
 
@@ -45,7 +46,7 @@
                 </div>
                 <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
                     <div class="overflow-hidden shadow-xl rounded-2xl">
-                        {{ $p1image := resources.Get .Site.Params.P1.Image }}
+                        {{ $p1image := resources.Get "/images/events-bg2.png" }}
                         {{ with $p1image }}
                         {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
@@ -64,11 +65,29 @@
                     
                     <div class="mt-6 text-gray-900 dark:text-white">
                         <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
-                            {{ range .Site.Params.P1.Content }}
                             <p class="text-lg text-gray-900 dark:text-white">
-                                {{ .text }}
+                                Monthly events, (Also called Succession Events) 
+                                have players compete against each other and 
+                                against players of other factions for the 
+                                illustrious title of 
+                                <img class="inline-block" src="/images/emperor-title.png" alt="Emperor">
+                                /
+                                <img class="inline-block" src="/images/empress-title.png" alt="Empress">
                             </p>
-                            {{ end }}
+
+                            <p class="text-lg text-gray-900 dark:text-white">
+                                These events happen on the first week of every 
+                                month and last for 7 days. The winner is crowned
+                                as the server's new emperor, a title they keep 
+                                until the next Succession Events.
+                            </p>
+
+                            <p class="text-lg text-gray-900 dark:text-white">
+                                As emperor you get certain benefits and the 
+                                ability to give your friends certain benefits
+                                too.
+                            </p>
+
                             <p class="text-lg text-gray-900 dark:text-white">
                                 <a href="/wiki/succession-events">Learn more &nbsp&rarr;</a>
                             </p>
