@@ -1,6 +1,4 @@
 /public
-assets/ts-out/*
-assets/ts-out/
 resources/
 node_modules/
 package-lock.json
