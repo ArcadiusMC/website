@@ -26,6 +26,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.124.1'
+          extended: true
 
       - name: NPM Install
         run: npm install
