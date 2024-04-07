@@ -12,19 +12,17 @@ The beta server will be up for 3 to 4 weeks. The server will open for anyone
 to join and fool around in!
   
 **Keep in mind!** This is a beta version of the server! Restarts, hotfixes bugs
-and changes will be common. There may even be playerdata resets :3  
-And unless a vocal majority wish for it, all playerdata after the beta has 
-ended will be wiped.
+and changes will occur frequently. There may even be playerdata resets :3  
 
 # Road map
 ## For the full release
 Our plan for the release:
-- 2 function factions (Latins and Pirates) along with content and features 
+- 2 functional factions (Latins and Pirates) along with content and features 
   unique to those factions.
 - A voting bank with separate vaults that can be accessed with vote tickets
   for different types of rewards.
-- Custom items (with textures and models) unique to each faction, an general
-  custom server items.
+- Custom items (with textures and models) unique to each faction and custom 
+  items, general to the server.
 - Custom music discs and ambience for each faction's region along with more
   lore and flavour.
 - A monthly event each month to decide a new emperor/empress.
