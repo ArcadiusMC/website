@@ -1,7 +1,7 @@
 ---
 title: "Additional Resources"
 type: "wiki"
-weight: 300
+weight: 2000
 ---
 
 ## List of additional resources for the plugins/tools we use.

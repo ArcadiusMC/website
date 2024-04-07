@@ -22,6 +22,28 @@
   </div>
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
   <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
+    {{if (and .Params.author .Params.authorimage)}}
+      <div class="not-prose dark:text-white max-w-fit pt-0 flex flex-row">
+        {{with (resources.Get .Params.authorimage).Resize "40x"}}
+          <div class="my-auto">
+            <img src="{{.RelPermalink}}" alt="{{.Params.author}} Minecraft Skin Head">
+          </div>
+        {{end}}
+
+        <div class="ml-2">
+          <b>Author:</b> {{.Params.author}}
+
+          {{if .Params.date}}
+            {{$d := time.Format "2006-01-02" .Params.date}}
+            <div>
+              <time datetime="{{$d}}"><b>Written:</b> {{$d}}</time>
+            </div>
+          {{end}}
+        </div>
+      </div>
+      <hr class="mt-2 pt-2">
+    {{end}}
+
     {{.Content}}
   </div>
 </article>

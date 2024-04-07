@@ -13,8 +13,13 @@
     <b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b>
     <hr class="border-black dark:border-white">
 
+    {{ $self := . }}
+
     {{ range .Pages.ByWeight }}
-      <a title="{{.Description}}" class="dark:text-white text-black" href="{{ .RelPermalink }}">
+      {{ $is_current := (eq . $self)}}
+      
+
+      <a title="{{.Description}}" class="dark:text-white text-black {{if $is_current}} text-cyan-500 {{end}}" href="{{ .RelPermalink }}">
         <p class="p-1 hover:bg-slate-400  dark:hover:bg-slate-700 rounded-md">
           {{ .Title }}
         </p>
