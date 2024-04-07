@@ -2,7 +2,7 @@
   {
     "name": "deletehome",
     "permission": "arcadius.commands.home",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "removehome",
       "remhome",
@@ -36,7 +36,7 @@
   {
     "name": "home",
     "permission": "arcadius.commands.home",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Takes you to one of your homes",
     "category": "home",
     "usages": [
@@ -64,7 +64,7 @@
   {
     "name": "homelist",
     "permission": "arcadius.commands.home",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "homes",
       "listhomes"
@@ -90,7 +90,7 @@
   {
     "name": "sethome",
     "permission": "arcadius.commands.home",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Sets a home where you\u0027re standing",
     "category": "home",
     "usages": [
@@ -146,7 +146,7 @@
   {
     "name": "balance",
     "permission": "arcadius.commands.balance",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "bal",
       "bank",
@@ -194,7 +194,7 @@
   {
     "name": "baltop",
     "permission": "arcadius.commands.baltop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "balancetop",
       "banktop",
@@ -249,7 +249,7 @@
   {
     "name": "deposit",
     "permission": "arcadius.commands.deposit",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Allows you to deposit coins into your balance",
     "usages": [
       {
@@ -330,7 +330,7 @@
   {
     "name": "flist",
     "permission": "arcadius.commands.list",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "list",
       "elist",
@@ -403,7 +403,7 @@
   {
     "name": "leave",
     "permission": "arcadius.commands.leave",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "quit",
       "exit"
@@ -427,7 +427,7 @@
   {
     "name": "me",
     "permission": "arcadius.commands.arcadius_me",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "me"
     ],
@@ -507,7 +507,7 @@
   {
     "name": "pay",
     "permission": "arcadius.commands.pay",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Pay another player",
     "usages": [
       {
@@ -522,7 +522,7 @@
   {
     "name": "playtimetop",
     "permission": "arcadius.commands.playtimetop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "nolifetop",
       "topplayers"
@@ -547,7 +547,7 @@
   {
     "name": "profile",
     "permission": "arcadius.commands.profile",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "user",
       "playerprofile",
@@ -592,7 +592,7 @@
   {
     "name": "reply",
     "permission": "arcadius.commands.message",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "er",
       "ereply",
@@ -613,19 +613,19 @@
   {
     "name": "roll",
     "permission": "arcadius.commands.roll",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "An ArcadiusMC command"
   },
   {
     "name": "say",
     "permission": "arcadius.commands.say",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Says a message in chat"
   },
   {
     "name": "settings",
     "permission": "arcadius.commands.settings",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "options",
       "preferences"
@@ -688,7 +688,7 @@
   {
     "name": "tell",
     "permission": "arcadius.commands.message",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "emsg",
       "tell",
@@ -716,7 +716,7 @@
   {
     "name": "topvoters",
     "permission": "arcadius.commands.topvoters",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "votetop"
     ],
@@ -740,7 +740,7 @@
   {
     "name": "wild",
     "permission": "arcadius.commands.wild",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "rtp",
       "randomtp",
@@ -759,7 +759,7 @@
   {
     "name": "withdraw",
     "permission": "arcadius.commands.withdraw",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Get cold coins from your balance",
     "usages": [
       {
@@ -1118,7 +1118,7 @@
   {
     "name": "afk",
     "permission": "arcadius.commands.afk",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "away"
     ],
@@ -1696,7 +1696,7 @@
   {
     "name": "shophistory",
     "permission": "arcadius.commands.shophistory",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Shows the history of the shop you\u0027re looking at",
     "category": "signshops",
     "usages": [
@@ -1711,7 +1711,7 @@
   {
     "name": "shopreselling",
     "permission": "arcadius.commands.shopreselling",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "shopresell"
     ],
@@ -1729,14 +1729,14 @@
   {
     "name": "market-bounds",
     "permission": "arcadius.commands.market-bounds",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "An ArcadiusMC command",
     "category": "markets"
   },
   {
     "name": "marketgui",
     "permission": "arcadius.commands.marketgui",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "marketmenu",
       "market-menu",
@@ -1941,13 +1941,25 @@
         "info": [
           "Sets a market\u0027s group."
         ]
+      },
+      {
+        "arguments": "render-size-increase get \u003cmarket\u003e",
+        "info": [
+          "Shows the size-increase of the claim highlighter bounding box"
+        ]
+      },
+      {
+        "arguments": "render-size-increase set \u003cmarket\u003e \u003cvalue\u003e",
+        "info": [
+          "Sets the size-increase of the claim highlighter of a market"
+        ]
       }
     ]
   },
   {
     "name": "mergeshop",
     "permission": "arcadius.commands.mergeshop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "merge-shop"
     ],
@@ -1957,7 +1969,7 @@
   {
     "name": "shopban",
     "permission": "arcadius.commands.shopban",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "shop-ban"
     ],
@@ -1975,7 +1987,7 @@
   {
     "name": "shoptrust",
     "permission": "arcadius.commands.shoptrust",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "shop-trust"
     ],
@@ -1993,7 +2005,7 @@
   {
     "name": "shopunban",
     "permission": "arcadius.commands.shopunban",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "shop-unban"
     ],
@@ -2011,7 +2023,7 @@
   {
     "name": "shopuntrust",
     "permission": "arcadius.commands.shopuntrust",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "shop-untrust"
     ],
@@ -2029,7 +2041,7 @@
   {
     "name": "transfershop",
     "permission": "arcadius.commands.transfershop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "transfer-shop"
     ],
@@ -2047,7 +2059,7 @@
   {
     "name": "unclaimshop",
     "permission": "arcadius.commands.unclaimshop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "unclaim-shop"
     ],
@@ -2065,7 +2077,7 @@
   {
     "name": "unmergeshop",
     "permission": "arcadius.commands.unmergeshop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "unmerge-shop"
     ],
@@ -3556,7 +3568,7 @@
   {
     "name": "shop",
     "permission": "arcadius.commands.shop",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "sellshop"
     ],
@@ -3993,7 +4005,7 @@
   {
     "name": "playertime",
     "permission": "arcadius.commands.playertime",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "ptime"
     ],
@@ -4513,7 +4525,7 @@
   {
     "name": "findwaypoint",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "findpole",
       "findpost",
@@ -4525,7 +4537,7 @@
   {
     "name": "homewaypoint",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "homepole",
       "homepost"
@@ -4544,7 +4556,7 @@
   {
     "name": "invite",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Invites users to your home waypoint",
     "category": "waypoints",
     "usages": [
@@ -4559,7 +4571,7 @@
   {
     "name": "listwaypoints",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "listregions",
       "regions",
@@ -4586,7 +4598,7 @@
   {
     "name": "movein",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "sethomepole",
       "sethomepost"
@@ -4605,14 +4617,14 @@
   {
     "name": "spawn",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Alias for \u0027/vr Hazelguard\u0027",
     "category": "waypoints"
   },
   {
     "name": "visit",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "v",
       "vr",
@@ -4632,7 +4644,7 @@
   {
     "name": "waypointgui",
     "permission": "arcadius.waypoints",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Opens the Waypoint GUI",
     "category": "waypoints"
   },
@@ -5262,7 +5274,7 @@
   {
     "name": "mail",
     "permission": "arcadius.mail",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Mail command",
     "category": "mail",
     "usages": [
@@ -5332,7 +5344,7 @@
   {
     "name": "tpacancel",
     "permission": "arcadius.commands.tpa",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Cancels a tpa request",
     "category": "tpa",
     "usages": [
@@ -5347,7 +5359,7 @@
   {
     "name": "tpaccept",
     "permission": "arcadius.commands.tpa",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Accepts a tpa request",
     "category": "tpa",
     "usages": [
@@ -5362,7 +5374,7 @@
   {
     "name": "tpask",
     "permission": "arcadius.commands.tpa",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "tpa",
       "tprequest",
@@ -5384,7 +5396,7 @@
   {
     "name": "tpaskhere",
     "permission": "arcadius.commands.tpa",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "tpahere",
       "eptahere",
@@ -5404,7 +5416,7 @@
   {
     "name": "tpdeny",
     "permission": "arcadius.commands.tpa",
-    "adminCommand": true,
+    "adminCommand": false,
     "aliases": [
       "tpadeny"
     ],
@@ -5422,7 +5434,7 @@
   {
     "name": "tpdenyall",
     "permission": "arcadius.commands.tpa",
-    "adminCommand": true,
+    "adminCommand": false,
     "description": "Denies all incoming tpa requests",
     "category": "tpa",
     "usages": [
