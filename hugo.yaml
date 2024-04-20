@@ -172,7 +172,9 @@ menu:
       name: "News"
       url: /news/
       weight: 3
-      target: 
+    - identifier: wiki
+      name: "Wiki"
+      url: /wiki/
 
 markup:
   goldmark:
