@@ -139,7 +139,7 @@ links:
 
 ### `conditions` (Optional)
 
-### `on-view` (Conditional)
+### `on-view` (Optional)
 
 ## Links
 
