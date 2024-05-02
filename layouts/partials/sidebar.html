@@ -40,9 +40,11 @@
 {{end}}
 
 {{define "sidebar-link"}}
-  <a title="{{.p.Description}}" href="{{.p.RelPermalink}}">
-    <li class="{{if (eq .cpage .p)}} text-blue-400 {{end}} {{if .title}} font-bold {{end}} p-1 hover:bg-slate-400  dark:hover:bg-slate-700">
-      {{.p.Title}}
-    </li>
-  </a>
+  {{if (eq .p.Type "wiki")}}
+    <a title="{{.p.Description}}" href="{{.p.RelPermalink}}">
+      <li class="{{if (eq .cpage .p)}} text-blue-400 {{end}} {{if .title}} font-bold {{end}} p-1 hover:bg-slate-400  dark:hover:bg-slate-700">
+        {{.p.Title}}
+      </li>
+    </a>
+  {{end}}
 {{end}}
