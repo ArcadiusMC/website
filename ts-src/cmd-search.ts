@@ -21,6 +21,7 @@ interface CommandEntry {
   description: string
   category: string
   usages: Usage[]
+  examples: Usage[]
   adminCommand?: boolean
 }
 
@@ -63,7 +64,7 @@ function initSearch() {
     return
   }
 
-  fetch("/commands.json")
+  fetch("/commands2.json")
     .then(response => {
       if (!response.ok) {
         console.error(`Failed to fetch commands JSON: ${response.statusText}`)
@@ -186,7 +187,8 @@ function renderCommands(searchResults: CommandEntry[], settings: CmdQuery, paren
     let isAdmin = createFieldElement("Admin Command", entry.adminCommand, b => {
       return document.createTextNode(b ? "Yes" : "No")
     })
-    let uses = createUsesElement(entry, settings)
+    let uses = createUsesElement(entry, settings, entry.usages, "Uses")
+    let examples = createUsesElement(entry, settings, entry.examples, "Examples")
 
     div.appendChild(title)
     div.appendChild(hr1)
@@ -209,14 +211,20 @@ function renderCommands(searchResults: CommandEntry[], settings: CmdQuery, paren
     if (uses) {
       div.appendChild(uses)
     }
+    if (examples) {
+      div.appendChild(examples)
+    }
 
     parent.appendChild(div)
   }
 }
 
-function createUsesElement(entry: CommandEntry, settings: CmdQuery): HTMLElement | null {
-  let uses: Usage[] = entry.usages;
-
+function createUsesElement(
+  entry: CommandEntry, 
+  settings: CmdQuery, 
+  uses: Usage[],
+  elemTitle: string
+): HTMLElement | null {
   // Filter out admin use cases
   if (uses && !settings.admin) {
     uses = uses.filter(value => {
@@ -241,7 +249,7 @@ function createUsesElement(entry: CommandEntry, settings: CmdQuery): HTMLElement
 
   let div = document.createElement("div")
   let title = document.createElement("h3")
-  title.textContent = "Uses"
+  title.textContent = elemTitle
   title.className = "cmd-uses-header"
 
   //let hr = document.createElement("hr")
@@ -254,7 +262,7 @@ function createUsesElement(entry: CommandEntry, settings: CmdQuery): HTMLElement
     let listItem = document.createElement("li")
 
     let argPre = document.createElement("pre")
-    argPre.className = "cmd-usage"
+    argPre.className = "cmd-usage text-white"
     argPre.textContent = `/${entry.name} ${use.arguments}`
 
     listItem.appendChild(argPre)

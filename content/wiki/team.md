@@ -22,7 +22,7 @@ following areas:
 # Owner
 ArcadiusMC has no one "owner." Rather, ownership of the server is split between:
 
-<div class="flex flew-row">
+<div class="flex flew-row justify-center">
   <div>
     <img class="not-prose mb-0 rounded-lg px-2" src="/images/people/juliewoolie.png">
     <p class="text-center">JulieWoolie (Julie)</p>

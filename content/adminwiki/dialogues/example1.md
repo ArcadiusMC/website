@@ -1,5 +1,6 @@
 ---
 title: "example.yml"
+type: rawfile
 ---
 
 ```yml
@@ -22,17 +23,20 @@ title: "example.yml"
 #  root settings
 #
 # - available-format (Optional):
-#     Sets the format used for buttons that are available for players to click on
+#     Sets the format used for buttons that are available for players to 
+#     click on.
 #     Use '${buttonText}' as a placeholder for the button's text
 #     Default: " &b&l> &b${buttonText}"
 #
 # - unavailable-format (Optional):
-#     Sets the format used for buttons that are NOT available for players to click on
+#     Sets the format used for buttons that are NOT available for players to 
+#     click on.
 #     Use '${buttonText}' as a placeholder for the button's text
 #     Default: " &8&l> &7${buttonText}"
 #
 # - highlight-format (Optional):
-#     Sets the format used for buttons that are NOT available for players to click on.
+#     Sets the format used for buttons that are NOT available for players to 
+#     click on.
 #     Use '${buttonText}' as a placeholder for the button's text
 #     Default: " &6&l> &e${buttonText}"
 #

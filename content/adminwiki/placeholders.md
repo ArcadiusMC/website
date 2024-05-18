@@ -1,7 +1,7 @@
 ---
 title: "Text Placeholders"
 type: wiki
-weight: 70
+weight: 65
 ---
 
 Placeholders are pieces of text that are replaced with other values when sent to a player. For example: `You have ${viewer.balances}` becomes `You have 1,000 Denarii`  

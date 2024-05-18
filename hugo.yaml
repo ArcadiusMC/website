@@ -175,6 +175,10 @@ menu:
     - identifier: wiki
       name: "Wiki"
       url: /wiki/
+    - identifier: adminwiki
+      name: "Admin Wiki"
+      weight: 4
+      url: /adminwiki/
 
 markup:
   goldmark:

@@ -57,6 +57,9 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            hr: {
+              'margin-bottom': '1em'
+            },
             '--tw-prose-body': theme('colors.zinc[800]'),
             '--tw-prose-headings': theme('colors.zinc[900]'),
             '--tw-prose-lead': theme('colors.zinc[700]'),
