@@ -3,8 +3,8 @@ title: "Arcadius Beta!"
 date: 2024-04-07T11:41:00+02:00
 summary: "Server beta announcement"
 author: JulieWoolie
-authorimage: ../assets/images/people/juliewoolie.png
-featured_image: ../assets/images/posts/index-bg.png
+authorimage: "/images/people/juliewoolie.png"
+featured_image: "/images/posts/index-bg.png"
 ---
 
 The ArcadiusMC beta is dropping (or has already dropped) on the 19th of April! 
