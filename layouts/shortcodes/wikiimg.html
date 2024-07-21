@@ -1,2 +1,4 @@
 {{ $src := .Get "src" }}
-<img style="image-rendering: pixelated" class="w-full px rounded-lg img-fluid" src="{{$src}}">
+{{ $fw := .Get "fullwidth"}}
+{{ $fullwidth := (or (eq $fw true) (eq $fw "true"))}}
+<img style="image-rendering: pixelated" class="{{if $fullwidth}}w-full{{else}}w-auto{{end}} px rounded-lg img-fluid" src="{{$src}}">

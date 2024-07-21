@@ -60,6 +60,12 @@ module.exports = {
             hr: {
               'margin-bottom': '1em'
             },
+            "code::after":{
+              'content': 'none'
+            },
+            "code::before":{
+              'content': 'none'
+            },
             '--tw-prose-body': theme('colors.zinc[800]'),
             '--tw-prose-headings': theme('colors.zinc[900]'),
             '--tw-prose-lead': theme('colors.zinc[700]'),

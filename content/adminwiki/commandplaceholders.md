@@ -1,7 +1,7 @@
 ---
 title: Command Placeholders
 weight: 60
-type: wiki
+type: techdocs
 ---
 Command placeholders are placeholders that can be used as placeholders for actual
 information in certain places, for example in the `console_cmd` or `player_cmd`

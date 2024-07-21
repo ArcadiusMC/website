@@ -3,7 +3,7 @@ title: ArcadiusMC
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
-enableGitInfo: false
+enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: true
 paginate: 9
@@ -52,8 +52,8 @@ params:
   moto: "Latins and Pirates, fighting over an Empire."
   description: "ArcadiusMC Minecraft Server"
   server_ip: arcadiusmc.net
-  server_version: '1.20.4'
-  disable_theme_toggle: false
+  server_version: '1.21'
+  disable_theme_toggle: true
   disable_stay_uptodate: true
 
   p1:

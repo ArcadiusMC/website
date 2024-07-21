@@ -1,6 +1,6 @@
 ---
 title: Dialogues
-type: wiki
+type: techdocs
 weight: 67
 ---
 

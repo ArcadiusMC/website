@@ -1,6 +1,6 @@
 ---
 title: "Text Placeholders"
-type: wiki
+type: techdocs
 weight: 65
 ---
 

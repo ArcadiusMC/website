@@ -1,6 +1,6 @@
 ---
 title: "Task Scheduling"
-type: "wiki"
+type: "techdocs"
 description: >
   Everything related to task scheduling.
 ---

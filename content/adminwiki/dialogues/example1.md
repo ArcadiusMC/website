@@ -2,7 +2,6 @@
 title: "example.yml"
 type: rawfile
 ---
-
 ```yml
 #
 # Example file of a dialogue tree

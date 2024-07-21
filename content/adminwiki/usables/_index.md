@@ -1,6 +1,6 @@
 ---
 title: "Usables"
-type: "wiki"
+type: "techdocs"
 weight: 75
 ---
 

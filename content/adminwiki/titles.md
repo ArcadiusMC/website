@@ -1,6 +1,6 @@
 ---
 title: Titles And Ranks
-type: wiki
+type: techdocs
 weight: 52
 toc: true
 ---

@@ -1,8 +1,8 @@
-const searchResults: HTMLDivElement = document.getElementById("search-results")
-const searchInput: HTMLInputElement = document.getElementById("search-query")
-const enableAdmin: HTMLInputElement = document.getElementById("admin-cmds")
-const enableMeta: HTMLInputElement = document.getElementById("show-metadata")
-const searchButton: HTMLButtonElement = document.getElementById("search-cmd-btn")
+const searchResults: HTMLDivElement = document.getElementById("search-results") as HTMLDivElement
+const searchInput: HTMLInputElement = document.getElementById("search-query") as HTMLInputElement
+const enableAdmin: HTMLInputElement = document.getElementById("admin-cmds") as HTMLInputElement
+const enableMeta: HTMLInputElement = document.getElementById("show-metadata") as HTMLInputElement
+const searchButton: HTMLButtonElement = document.getElementById("search-cmd-btn") as HTMLButtonElement
 
 const LABEL_MATCH_WEIGHT = 10
 const ALIAS_MATCH_WEIGHT = 2.5
@@ -334,7 +334,6 @@ function lookupCommands(settings: CmdQuery): CommandEntry[] {
     // If admin command, and we're not showing admin commands,
     // skip it
     if (entry.adminCommand != undefined && entry.adminCommand && !settings.admin) {
-//      console.log(`Entry ${entry.name} is admin=${entry.adminCommand}`)
       continue
     }
 

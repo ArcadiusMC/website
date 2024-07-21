@@ -1,5 +1,5 @@
 {{ $pag := $.Paginator }}
-{{ if gt $pag.TotalPages 1 }}
+{{ if gt $pag.TotalPages 0 }}
 {{ $.Scratch.Set "dot_rendered" false }}
 
 <nav class="flex items-center justify-center px-4 sm:px-0">

@@ -1,5 +1,5 @@
 ---
 title: "Punishments"
-type: "wiki"
+type: "techdocs"
 weight: 50
 ---

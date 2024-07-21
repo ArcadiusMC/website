@@ -1,6 +1,6 @@
 ---
 title: Reference
-type: wiki
+type: techdocs
 weight: 30
 toc: true
 ---
