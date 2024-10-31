@@ -17,19 +17,6 @@
   background-color: #00000094;
 }
 
-.ip-copy {
-  color: white;
-}
-
-.ip-copy:hover {
-  text-decoration: underline;
-}
-
-.ip-copy:active {
-  color: rgb(139, 162, 166);
-  text-decoration: underline;
-}
-
 .wiki-container {
   display: flex;
   justify-content: center;
