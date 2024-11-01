@@ -3,11 +3,12 @@ title: "Server Team"
 type: wiki
 description: "Server Team"
 weight: 1
+toc: true
 ---
 
 <img src="/images/wiki/team.png" class="rounded-lg" alt="Server Team">
 
-# Open positions
+## Open positions
 
 If you are interested in joining the staff team, we could use help in the 
 following areas:
@@ -19,7 +20,7 @@ following areas:
 - **Server promotion:** bringing more attention to the server, for example 
   through Youtube, Twitch or TikTok.
 
-# Owner
+## Owner
 ArcadiusMC has no one "owner." Rather, ownership of the server is split between:
 
 <div class="flex flew-row justify-center">
@@ -38,7 +39,7 @@ ArcadiusMC has no one "owner." Rather, ownership of the server is split between:
 </div>
 
 
-# Staff
+## Staff
 This role is given to players that have proven to be of great use to the server.
 Players earn it through activity and proving that they can be useful in one of 
 the following areas:
@@ -60,7 +61,7 @@ Players with this role have extra perms in-game, such as:
 - And more.
 
 
-# Helper
+## Helper
 Players earn it by helping the server out in various ways but are not part of 
 the staff team. 
   

@@ -3,6 +3,7 @@ title: "History"
 linkTitle: "History"
 type: wiki
 weight: 50
+toc: true
 description: >
   Server History
 ---

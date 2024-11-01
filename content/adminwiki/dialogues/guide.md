@@ -1,6 +1,6 @@
 ---
 title: Guide
-type: techdocs
+type: wiki
 toc: true
 ---
 

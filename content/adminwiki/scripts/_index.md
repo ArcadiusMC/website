@@ -1,6 +1,6 @@
 ---
 title: "Scripting"
-type: "techdocs"
+type: "wiki"
 weight: 100
 ---
 

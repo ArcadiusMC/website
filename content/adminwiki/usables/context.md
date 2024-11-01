@@ -1,6 +1,6 @@
 ---
 title: "Context Values"
-type: techdocs
+type: wiki
 weight: 40
 toc: true
 ---

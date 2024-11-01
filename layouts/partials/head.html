@@ -18,13 +18,16 @@
     }
 </script>
 
-{{ $cstyles := resources.Get "/css/custom.css" }}
-<link rel="stylesheet" href="{{ $cstyles.RelPermalink }}">
+{{template "link-style" (dict "ref" "/css/style.css" "Site" $.Site )}}
+{{template "link-style" (dict "ref" "/css/custom.css" "Site" $.Site )}}
 
-{{ $styles := resources.Get "/css/style.css" | postCSS }}
-{{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
-{{ end }}
+{{define "link-style"}}
+  {{$styles := resources.Get $.ref | postCSS }}
+
+  {{ if $.Site.IsServer }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{ else }}
+    {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  {{ end }}
+{{end}}

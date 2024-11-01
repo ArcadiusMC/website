@@ -1,6 +1,6 @@
 ---
 title: Reference
-type: techdocs
+type: wiki
 toc: true
 ---
 

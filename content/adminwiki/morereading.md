@@ -1,6 +1,6 @@
 ---
 title: "Additional Resources"
-type: "techdocs"
+type: "wiki"
 weight: 2000
 ---
 

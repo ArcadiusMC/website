@@ -57,6 +57,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            maxWidth: 'none',
             hr: {
               'margin-bottom': '1em'
             },
@@ -65,6 +66,24 @@ module.exports = {
             },
             "code::before":{
               'content': 'none'
+            },
+            'h1': {
+              'font-weight': 'initial',
+              'font-size': '2.5em'
+            },
+            'h2': {
+              'font-weight': 'initial',
+              'font-size': '2em',
+              'margin-bottom': '0.5em',
+              'margin-top': '1em'
+            },
+            'h3': {
+              'font-size': '1.5em',
+              'font-weight': 'initial'
+            },
+            'h4': {
+              'font-weight': 'initial',
+              'font-size': '1em'
             },
             '--tw-prose-body': theme('colors.zinc[800]'),
             '--tw-prose-headings': theme('colors.zinc[900]'),

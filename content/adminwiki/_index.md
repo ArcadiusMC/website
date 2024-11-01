@@ -1,6 +1,6 @@
 ---
 title: "Admin Wiki"
-type: techdocs
+type: wiki
 ---
 
 This is a special wiki written for staff members of ArcadiusMC. Here you'll find

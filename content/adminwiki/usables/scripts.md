@@ -1,6 +1,6 @@
 ---
 title: "Usables Scripting"
-type: techdocs
+type: wiki
 weight: 45
 ---
 ## General

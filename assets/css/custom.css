@@ -17,33 +17,6 @@
   background-color: #00000094;
 }
 
-.wiki-container {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  margin: auto;
-}
-
-.wikisidebar {
-  flex-direction: column;
-  flex: auto !important;
-  min-width: 200px; 
-  max-width: 200px; 
-  flex: 5;
-  overflow-x: hidden;
-}
-
-.wiki-hr {
-  max-width: 95%;
-}
-
-.wikicontent {
-  flex-grow: 1 !important;
-  flex: content;
-  margin: 1rem 0px 3rem 0px;
-  min-height: 25rem;
-}
-
 .sidebartopbottomborders {
   display: none;
 }
@@ -63,22 +36,6 @@
     display: none;
   }
 
-  .wiki-container {
-    flex-direction: column;
-    justify-content: left;
-    justify-items: left;
-  }
-
-  .wikisidebar {
-    color: #9c9c9c;
-    margin: unset;
-    text-align: left;
-    background-color: #0f172a;
-    max-width: 100%;
-    padding-left: 1.5rem;
-    overflow-x: hidden;
-  }
-
   .sidebartopbottomborders {
     display: inherit;
   }
@@ -89,10 +46,6 @@
   
   .sidebar-hidden {
     display: none;
-  }
-
-  .wikihead-mb-4 {
-    margin-bottom: unset;
   }
 }
 
@@ -115,21 +68,7 @@ h1[id], h2[id], h3[id] {
 }
 
 :root {
-  --techdoc-width: 1280px;
-}
-
-@media (min-width: 1280px) {
-  .techdocs-min-w {
-    min-width: var(--techdoc-width);
-  }
-  
-  .techdocs-max-w {
-    max-width: var(--techdoc-width);
-  }
-  
-  .techdocs-w {
-    width: var(--techdoc-width);
-  }
+  --techdoc-width: 1024px;
 }
 
 code:not([data-lang]) {
@@ -164,4 +103,66 @@ a code:not([data-lang]) {
 }
 .quoted::after {
   content: '"';
+}
+
+
+@media (min-width: 1280px) {
+  .widewiki-min-w {
+    min-width: var(--techdoc-width);
+  }
+  
+  .widewiki-max-w {
+    max-width: var(--techdoc-width);
+  }
+  
+  .widewiki-w {
+    width: var(--techdoc-width);
+  }
+}
+
+
+.wikisidebar {
+  flex-direction: column;
+  flex: auto !important;
+  flex: 5;
+  overflow-x: hidden;
+}
+
+.wiki-sidewidth {
+  width: 250px; 
+}
+
+@media (max-width: 1024px) {
+  .wiki-sidewidth {
+    max-width: 100%;
+  }
+
+  .wikisidebar {
+    color: #9c9c9c;
+    margin: unset;
+    text-align: left;
+    background-color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  .sidebar-shown {
+    padding-bottom: 1.5rem;
+  }
+  
+  .sidebar-hidden {
+    display: none;
+  }
+}
+
+#TableOfContents ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+#TableOfContents li {
+  margin-top: 0.5rem;
+}
+
+#TableOfContents li a {
+  color: #818cf8;
 }

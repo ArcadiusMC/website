@@ -1,12 +1,3 @@
 {{define "main"}}
-<article>
-  {{ partial "page-header.html" . }}
-  <div class="wiki-container">
-    {{ partial "sidebar.html" . }}
-    <div class="wikicontent max-w-3xl px-6 pt-6 pb-16 prose dark:prose-invert dark:text-white">
-      {{ partial "toc.html" . }}
-      {{.Content}}
-    </div>
-  </div>
-</article>
+  {{partial "wide-wiki-page.html" (dict "page" . "include_toc" true)}}
 {{end}}

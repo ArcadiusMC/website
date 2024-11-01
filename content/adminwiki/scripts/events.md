@@ -1,6 +1,6 @@
 ---
 title: "Events"
-type: "techdocs"
+type: "wiki"
 description: "JavaScript event listeners"
 ---
 

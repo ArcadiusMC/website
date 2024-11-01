@@ -2,6 +2,7 @@
 title: "Contributing"
 type: wiki
 weight: 100
+toc: true
 ---
 
 Anyone who wishes to contribute to this wiki can do so by submitting a pull

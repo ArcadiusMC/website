@@ -1,0 +1,35 @@
+{{$has_toc := .include_toc}}
+{{$sidebar_param := .has_sidebar}}
+{{$has_sidebar := (or (eq $sidebar_param "true") (eq $sidebar_param nil))}}
+{{$code_font := (eq .codefont true)}}
+
+{{with .page}}
+
+<article class="mx-auto max-w-fit bg-white dark:bg-slate-800 dark:bg-opacity-95 lg:p-10">
+  <div class="flex flex-col lg:flex-row">
+    {{if $has_sidebar}}
+      {{partial "side-navbar.html" . }}
+    {{end}}
+    
+    <div class="widewiki-min-w max-lg:w-screen">
+      <h1 style="max-width: 1000px;" class="{{if $code_font}}codefont{{end}} text-5xl {{if (not $has_sidebar)}}pb-5{{end}} max-lg:mt-5 lg:ml-5 pb-3 sidebar-lmargin text-black dark:text-white lg:text-left text-center">
+        {{.Title}}
+      </h1>
+
+      <div class="px-6 {{if $has_sidebar}}pt-6{{end}} pb-16 min-h-screen prose dark:prose-invert dark:text-white max-w-screen-lg">
+        {{.Content}}
+      </div>
+
+      <div class="lg:text-right lg:max-w-[1000px]">
+        {{ partial "git-info.html" . }}
+      </div>
+    </div>
+
+    {{if $has_toc}}
+      <div class="text-white sticky invisible xl:visible wiki-sidewidth">
+        {{partial "toc.html" .}}
+      </div>
+    {{end}}
+  </div>
+</article>
+{{end}}

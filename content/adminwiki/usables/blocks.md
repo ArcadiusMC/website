@@ -1,6 +1,6 @@
 ---
 title: "Block Usables"
-type: "techdocs"
+type: "wiki"
 weight: 10
 ---
 
