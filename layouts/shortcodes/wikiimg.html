@@ -1,4 +1,11 @@
 {{ $src := .Get "src" }}
 {{ $fw := .Get "fullwidth"}}
 {{ $fullwidth := (or (eq $fw true) (eq $fw "true"))}}
+{{ $matching_res := resources.GetMatch $src }}
+
+{{if (not (eq $matching_res nil))}}
+  {{$rgot := resources.Get $src}}
+  {{$src = $rgot.RelPermalink}}
+{{end}}
+
 <img style="image-rendering: pixelated" class="{{if $fullwidth}}w-full{{else}}w-auto{{end}} px rounded-lg img-fluid" src="{{$src}}">

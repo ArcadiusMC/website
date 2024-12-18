@@ -44,15 +44,14 @@ This role is given to players that have proven to be of great use to the server.
 Players earn it through activity and proving that they can be useful in one of 
 the following areas:
 - **Coding**: These players help create and maintain the server's custom plugins
-  code. Their importance to the server cannot be overstated, but prepare to be
-  bullied by Julie. *(I'm nice, I promise)*
+  code. Their importance to the server cannot be overstated.
+- **Building**: These players help build structures, events and more for the 
+  server.
 - **Improving**: These players know how all features on the server work, know 
   how to improve them and can provide their help in the process. For example:
   balancing features or economy management.
 - **Policing**: These players know about all the rules and punishments, how to 
   act maturely in conflicts and are able to diffuse sticky situations.
-- **Building**: These players help build structures, events and more for the 
-  server.
 
 Players with this role have extra perms in-game, such as:
 - Access to spectator and teleporting,
