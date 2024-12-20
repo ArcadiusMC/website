@@ -94,13 +94,7 @@ function initSearch() {
   enableAdmin.onclick = () => onCommandSearch()
   enableMeta.onclick = () => onCommandSearch()
   searchButton.onclick = () => onCommandSearch()
-
-  searchInput.addEventListener("keypress", event => {
-    if (event.key != "Enter") {
-      return
-    }
-    onCommandSearch()
-  })
+  searchInput.onkeyup = () => onCommandSearch()
 }
 
 function getSearchFromUrl(): string {

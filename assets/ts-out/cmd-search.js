@@ -55,12 +55,7 @@ function initSearch() {
     enableAdmin.onclick = () => onCommandSearch();
     enableMeta.onclick = () => onCommandSearch();
     searchButton.onclick = () => onCommandSearch();
-    searchInput.addEventListener("keypress", event => {
-        if (event.key != "Enter") {
-            return;
-        }
-        onCommandSearch();
-    });
+    searchInput.onkeyup = () => onCommandSearch();
 }
 function getSearchFromUrl() {
     let params = new URLSearchParams(window.location.search);
@@ -234,7 +229,6 @@ function lookupCommands(settings) {
         // If admin command, and we're not showing admin commands,
         // skip it
         if (entry.adminCommand != undefined && entry.adminCommand && !settings.admin) {
-            //      console.log(`Entry ${entry.name} is admin=${entry.adminCommand}`)
             continue;
         }
         if (settings.query.length > 0) {

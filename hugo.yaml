@@ -95,10 +95,10 @@ params:
     
 menu:
   main:
-    #- identifier: store
-    #  name: Store
-    #  url: "https://store.arcadiusmc.net"
-    #  weight: 10
+    - identifier: store
+      name: Store
+      url: "https://store.arcadiusmc.net"
+      weight: 10
     - identifier: map
       name: World Map
       url: "https://map.arcadiusmc.net"
