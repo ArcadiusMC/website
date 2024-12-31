@@ -12,6 +12,13 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.bg-neolatium {
+  background-image: url("/images/bg-neolatium-upper.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .gray-margin {
   background-color: #00000094;

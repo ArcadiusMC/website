@@ -1,6 +1,8 @@
 {{ $src := .Get "src" }}
 {{ $fw := .Get "fullwidth"}}
+{{ $center := .Get "centered"}}
 {{ $fullwidth := (or (eq $fw true) (eq $fw "true"))}}
+{{ $centered := (or (eq $center true) (eq $center "true"))}}
 {{ $matching_res := resources.GetMatch $src }}
 
 {{if (not (eq $matching_res nil))}}
@@ -8,4 +10,4 @@
   {{$src = $rgot.RelPermalink}}
 {{end}}
 
-<img style="image-rendering: pixelated" class="{{if $fullwidth}}w-full{{else}}w-auto{{end}} px rounded-lg img-fluid" src="{{$src}}">
+<img style="image-rendering: pixelated" class="{{if $fullwidth}}w-full{{else}}w-auto{{end}} {{if $centered}}mx-auto{{end}} px rounded-lg img-fluid" src="{{$src}}">

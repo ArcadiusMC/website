@@ -111,6 +111,10 @@ menu:
       name: "News"
       url: /news/
       weight: 30
+    - identifier: votingsites
+      name: "Voting Sites"
+      url: /voting/
+      weight: 32
     - identifier: commands
       name: Commands
       url: /commands
@@ -172,13 +176,18 @@ menu:
       name: "News"
       url: /news/
       weight: 3
-    - identifier: wiki
-      name: "Wiki"
-      url: /wiki/
     - identifier: adminwiki
       name: "Admin Wiki"
       weight: 4
       url: /adminwiki/
+    - identifier: wiki
+      name: "Wiki"
+      weight: 5
+      url: /wiki/
+    - identifier: voting
+      name: "Voting Sites"
+      weight: 6
+      url: /voting/
 
 markup:
   goldmark:
