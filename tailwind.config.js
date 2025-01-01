@@ -61,6 +61,10 @@ module.exports = {
             hr: {
               'margin-bottom': '1em'
             },
+            'p': {
+              'margin-top': 0,
+              'margin-bottom': '1rem'
+            },
             "code::after":{
               'content': 'none'
             },
@@ -69,21 +73,36 @@ module.exports = {
             },
             'h1': {
               'font-weight': 'initial',
-              'font-size': '2.5em'
+              'font-size': '2.5em',
+              'margin-bottom': '1rem',
+              'margin-top': '3rem'
             },
             'h2': {
               'font-weight': 'initial',
               'font-size': '2em',
-              'margin-bottom': '0.5em',
-              'margin-top': '1em'
+              'margin-bottom': '1rem',
+              'margin-top': '3rem'
             },
             'h3': {
               'font-size': '1.5em',
-              'font-weight': 'initial'
+              'font-weight': 'initial',
+              'margin-top': '2rem'
+            },
+            'h1+h2':{
+              'margin-top': '1rem'
+            },
+            'h2+h3':{
+              'margin-top': '1rem'
+            },
+            'h1+h3':{
+              'margin-top': '1rem'
             },
             'h4': {
               'font-weight': 'initial',
               'font-size': '1em'
+            },
+            'p:has(+div.highlight)': {
+              'margin-bottom': '-1rem'
             },
             '--tw-prose-body': theme('colors.zinc[800]'),
             '--tw-prose-headings': theme('colors.zinc[900]'),

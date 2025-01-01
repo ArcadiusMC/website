@@ -586,6 +586,8 @@ video {
 .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .prose :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -719,6 +721,8 @@ video {
   line-height: 1.1111111;
   font-weight: initial;
   font-size: 2.5em;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .prose :where(h1 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -729,11 +733,13 @@ video {
 .prose :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: var(--tw-prose-headings);
   font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 1em;
   line-height: 1.3333333;
   font-weight: initial;
   font-size: 2em;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .prose :where(h2 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -749,6 +755,7 @@ video {
   line-height: 1.6;
   font-size: 1.5em;
   font-weight: initial;
+  margin-top: 2rem;
 }
 
 .prose :where(h3 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1085,6 +1092,22 @@ video {
   margin-bottom: 0;
 }
 
+.prose :where(h1+h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  margin-top: 1rem;
+}
+
+.prose :where(h2+h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  margin-top: 1rem;
+}
+
+.prose :where(h1+h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  margin-top: 1rem;
+}
+
+.prose :where(p:has(+div.highlight)):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  margin-bottom: -1rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1144,6 +1167,10 @@ video {
 
 .top-8 {
   top: 2rem;
+}
+
+.top-\[80px\] {
+  top: 80px;
 }
 
 .z-30 {
@@ -1245,6 +1272,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-1 {
@@ -1353,6 +1384,11 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-max {
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 
 .min-h-screen {
@@ -2181,6 +2217,10 @@ video {
 
 .ring-zinc-300\/40 {
   --tw-ring-color: rgb(212 212 216 / 0.4);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
