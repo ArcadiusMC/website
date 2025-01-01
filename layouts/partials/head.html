@@ -18,6 +18,10 @@
     }
 </script>
 
+{{if .Params.katex}}
+  {{partial "katex.html" .}}
+{{end}}
+
 {{template "link-style" (dict "ref" "/css/style.css" "Site" $.Site )}}
 {{template "link-style" (dict "ref" "/css/custom.css" "Site" $.Site )}}
 
