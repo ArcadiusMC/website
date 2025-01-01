@@ -26,9 +26,9 @@ usables actions.
 |`%player.uuid`|Player's UUID|ff09eaf1-b01e-4a17-a6f9-81468ce42f3a|
 
 Examples in commands:
-- `/tp %player 0 100 0`  
+- {{<cmduse text="/tp %player 0 100 0" >}}
   Becomes: `/tp JulieWoolie 0 100 0`
-- `/tellraw %player "You are at %player.block yaw=%player.yaw pitch=%player.pitch"`  
+- {{<cmduse text="/tellraw %player \"You are at %player.block yaw=%player.yaw pitch=%player.pitch\"" >}}
   Becomes: `/tellraw JulieWoolie "You are at 12 3 200 yaw=45 pitch=-45"`  
 
 ## AncientGates placeholder
